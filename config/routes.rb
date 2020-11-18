@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  resources :user_goals
-  resources :activity_entries
+  # resources :user_goals
+  # resources :activity_entries
+  # resources :mood_entries
   resources :activities
-  resources :mood_entries
   resources :moods
   resources :prompts
   resources :daily_entries
