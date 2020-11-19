@@ -1,5 +1,6 @@
 Prompt.destroy_all
 Mood.destroy_all
+Goal.destroy_all
 
 Prompt.create(
   statement: "Today, I will...",
@@ -292,4 +293,29 @@ Mood.create(
 Mood.create(
   name: "Tired",
   type: "Negative"
+)
+
+Goal.create(
+  name: "Increase Happiness"
+)
+Goal.create(
+  name: "Reduce Anxiety"
+)
+Goal.create(
+  name: "Build Self-Esteem"
+)
+Goal.create(
+  name: "Physical Fitness"
+)
+Goal.create(
+  name: "Dietary Health"
+)
+Goal.create(
+  name: "Improve Sleep"
+)
+Goal.create(
+  name: "Manage Stress"
+)
+Goal.create(
+  name: "Improve Productivity"
 )
