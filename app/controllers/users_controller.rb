@@ -11,6 +11,7 @@ class UsersController < ApplicationController
         status: 500,
         errors: ['User not found.']
       }
+    end
   end
 
   def show 

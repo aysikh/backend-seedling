@@ -4,295 +4,295 @@ Goal.destroy_all
 
 Prompt.create(
   statement: "Today, I will...",
-  type: "Morning"
+  group: "Morning"
 )
 Prompt.create(
-  statement: "How will I face any challenges that may come my way?"
-  type: "Morning"
+  statement: "How will I face any challenges that may come my way?",
+  group: "Morning"
 )
 Prompt.create(
-  statement: "One thing I can do to make my day better?"
-  type: "Morning"
+  statement: "One thing I can do to make my day better?",
+  group: "Morning"
 )
 Prompt.create(
-  statement: "Right now I am feeling..."
-  type: "Morning"
+  statement: "Right now I am feeling...",
+  group: "Morning"
 )
 Prompt.create(
-  statement: "Today I will challenge myself by..."
-  type: "Morning"
+  statement: "Today I will challenge myself by...",
+  group: "Morning"
 )
 Prompt.create(
-  statement: "Something money can't buy that I am grateful for is..."
-  type: "Morning"
+  statement: "Something money can't buy that I am grateful for is...",
+  group: "Morning"
 )
 Prompt.create(
-  statement: "I will not let ______ get in my way of my happiness"
-  type: "Morning"
+  statement: "I will not let ______ get in my way of my happiness",
+  group: "Morning"
 )
 Prompt.create(
-  statement: "What do I need to give up, say no to, or let go of?"
-  type: "Morning"
+  statement: "What do I need to give up, say no to, or let go of?",
+  group: "Morning"
 )
 Prompt.create(
-  statement: "I will prioritize myself by..."
-  type: "Morning"
+  statement: "I will prioritize myself by...",
+  group: "Morning"
 )
 Prompt.create(
-  statement: "I am thankful for..."
-  type: "Morning"
+  statement: "I am thankful for...",
+  group: "Morning"
 )
 Prompt.create(
-  statement: "I am grateful for..."
-  type: "Morning"
+  statement: "I am grateful for...",
+  group: "Morning"
 )
 Prompt.create(
-  statement: "Set your intentions for the day. I intend to..."
-  type: "Morning"
+  statement: "Set your intentions for the day. I intend to...",
+  group: "Morning"
 )
 Prompt.create(
-  statement: "One thing I will accomplish today..."
-  type: "Morning"
+  statement: "One thing I will accomplish today...",
+  group: "Morning"
 )
 Prompt.create(
-  statement: "I will focus on things that makes me feel good such as..."
-  type: "Morning"
+  statement: "I will focus on things that makes me feel good such as...",
+  group: "Morning"
 )
 Prompt.create(
-  statement: "Today I am excited for..."
-  type: "Morning"
+  statement: "Today I am excited for...",
+  group: "Morning"
 )
 Prompt.create(
-  statement: "What is something I can do to brighten up someone else's day today?"
-  type: "Morning"
+  statement: "What is something I can do to brighten up someone else's day today?",
+  group: "Morning"
 )
 Prompt.create(
-  statement: "Is there a different way of thinking about a situation that's bringing me down?"
-  type: "Morning"
+  statement: "Is there a different way of thinking about a situation that's bringing me down?",
+  group: "Morning"
 )
 Prompt.create(
-  statement: "A quality that I admire about myself is..."
-  type: "Morning"
+  statement: "A quality that I admire about myself is...",
+  group: "Morning"
 )
 Prompt.create(
-  statement: "Something I can't live without and why?"
-  type: "Morning"
+  statement: "Something I can't live without and why?",
+  group: "Morning"
 )
 Prompt.create(
-  statement: "Today I promise myself that I will not..."
-  type: "Morning"
+  statement: "Today I promise myself that I will not...",
+  group: "Morning"
 )
 Prompt.create(
-  statement: "An accomplishment from yesterday that I am proud of..."
-  type: "Morning"
+  statement: "An accomplishment from yesterday that I am proud of...",
+  group: "Morning"
 )
 Prompt.create(
-  statement: "I want to learn more about..."
-  type: "Morning"
+  statement: "I want to learn more about...",
+  group: "Morning"
 )
 Prompt.create(
-  statement: "My motto for today is..."
-  type: "Morning"
+  statement: "My motto for today is...",
+  group: "Morning"
 )
 Prompt.create(
-  statement: "Today I told someone I appreciated them and that someone was..."
-  type: "Night"
+  statement: "Today I told someone I appreciated them and that someone was...",
+  group: "Night"
 )
 Prompt.create(
-  statement: "Today I thanked someone for..."
-  type: "Night"
+  statement: "Today I thanked someone for...",
+  group: "Night"
 )
 Prompt.create(
-  statement: "I am grateful for..."
-  type: "Night"
+  statement: "I am grateful for...",
+  group: "Night"
 )
 Prompt.create(
-  statement: "My day could've been better if..."
-  type: "Night"
+  statement: "My day could've been better if...",
+  group: "Night"
 )
 Prompt.create(
-  statement: "One good thing about my day today was..."
-  type: "Night"
+  statement: "One good thing about my day today was...",
+  group: "Night"
 )
 Prompt.create(
-  statement: "Today I felt..."
-  type: "Night"
+  statement: "Today I felt...",
+  group: "Night"
 )
 Prompt.create(
-  statement: "What made you laugh today?"
-  type: "Night"
+  statement: "What made you laugh today?",
+  group: "Night"
 )
 Prompt.create(
   statement: "Today I told someone I loved them and that someone is...",
-  type: "Night"
+  group: "Night"
 )
 Prompt.create(
-  statement: "Someone that made my day today is..."
-  type: "Night"
+  statement: "Someone that made my day today is...",
+  group: "Night"
 )
 Prompt.create(
-  statement: "Right now I am feeling..."
-  type: "Night"
+  statement: "Right now I am feeling...",
+  group: "Night"
 )
 Prompt.create(
-  statement: "What is an important lesson I've learned today or recently?"
-  type: "Night"
+  statement: "What is an important lesson I've learned today or recently?",
+  group: "Night"
 )
 
 
 
 Mood.create(
   name: "Calm",
-  type: "Positive"
+  group: "Positive"
 )
 Mood.create(
   name: "Confident",
-  type: "Positive"
+  group: "Positive"
 )
 Mood.create(
   name: "Content",
-  type: "Positive"
+  group: "Positive"
 )
 Mood.create(
   name: "Energized",
-  type: "Positive"
+  group: "Positive"
 )
 Mood.create(
   name: "Enthusiastic",
-  type: "Positive"
+  group: "Positive"
 )
 Mood.create(
   name: "Excited",
-  type: "Positive"
+  group: "Positive"
 )
 Mood.create(
   name: "Free",
-  type: "Positive"
+  group: "Positive"
 )
 Mood.create(
   name: "Grateful",
-  type: "Positive"
+  group: "Positive"
 )
 Mood.create(
   name: "Happy",
-  type: "Positive"
+  group: "Positive"
 )
 Mood.create(
   name: "Inspired",
-  type: "Positive"
+  group: "Positive"
 )
 Mood.create(
   name: "Loving",
-  type: "Positive"
+  group: "Positive"
 )
 Mood.create(
   name: "Motivated",
-  type: "Positive"
+  group: "Positive"
 )
 Mood.create(
   name: "Optimistic",
-  type: "Positive"
+  group: "Positive"
 )
 Mood.create(
   name: "Passionate",
-  type: "Positive"
+  group: "Positive"
 )
 Mood.create(
   name: "Peaceful",
-  type: "Positive"
+  group: "Positive"
 )
 Mood.create(
   name: "Proud",
-  type: "Positive"
+  group: "Positive"
 )
 Mood.create(
   name: "Refreshed",
-  type: "Positive"
+  group: "Positive"
 )
 Mood.create(
   name: "Relieved",
-  type: "Positive"
+  group: "Positive"
 )
 Mood.create(
   name: "Satisfied",
-  type: "Positive"
+  group: "Positive"
 )
 Mood.create(
   name: "Secure",
-  type: "Positive"
+  group: "Positive"
 )
 
 Mood.create(
   name: "Afraid",
-  type: "Negative"
+  group: "Negative"
 )
 Mood.create(
   name: "Angry",
-  type: "Negative"
+  group: "Negative"
 )
 Mood.create(
   name: "Annoyed",
-  type: "Negative"
+  group: "Negative"
 )
 Mood.create(
   name: "Anxious",
-  type: "Negative"
+  group: "Negative"
 )
 Mood.create(
   name: "Ashamed",
-  type: "Negative"
+  group: "Negative"
 )
 Mood.create(
   name: "Burned Out",
-  type: "Negative"
+  group: "Negative"
 )
 Mood.create(
   name: "Confused",
-  type: "Negative"
+  group: "Negative"
 )
 Mood.create(
   name: "Depressed",
-  type: "Negative"
+  group: "Negative"
 )
 Mood.create(
   name: "Disappointed",
-  type: "Negative"
+  group: "Negative"
 )
 Mood.create(
   name: "Embarassed",
-  type: "Negative"
+  group: "Negative"
 )
 Mood.create(
   name: "Exhausted",
-  type: "Negative"
+  group: "Negative"
 )
 Mood.create(
   name: "Guilty",
-  type: "Negative"
+  group: "Negative"
 )
 Mood.create(
   name: "Jealous",
-  type: "Negative"
+  group: "Negative"
 )
 Mood.create(
   name: "Lonely",
-  type: "Negative"
+  group: "Negative"
 )
 Mood.create(
   name: "Nervous",
-  type: "Negative"
+  group: "Negative"
 )
 Mood.create(
   name: "Sad",
-  type: "Negative"
+  group: "Negative"
 )
 Mood.create(
   name: "Stressed",
-  type: "Negative"
+  group: "Negative"
 )
 Mood.create(
   name: "Tired",
-  type: "Negative"
+  group: "Negative"
 )
 
 Goal.create(

@@ -52,14 +52,14 @@ ActiveRecord::Schema.define(version: 2020_11_18_192959) do
 
   create_table "moods", force: :cascade do |t|
     t.string "name"
-    t.string "type"
+    t.string "group"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "prompts", force: :cascade do |t|
     t.text "statement"
-    t.string "type"
+    t.string "group"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
