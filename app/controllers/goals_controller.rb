@@ -1,8 +1,7 @@
 class GoalsController < ApplicationController
 
   def index
-    @goals = Goal.all 
-    render :json => @goals
+    render json: Goal.all.to_json()
   end
 
 end

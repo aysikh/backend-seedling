@@ -15,11 +15,16 @@ class DailyEntriesController < ApplicationController
     render json: @dailyentry
   end
 
+  def update
+    @dailyentry = DailyEntry.find(params[:id])
+    @dailyentry.update(
+      rating: params[:rating],
+      content: params[:content])
+  end
+
+
   private
   
-  def find_daliy_entry
-    @dailyentry = DailyEntry.find(params[:id])
-  end
 
   def daily_entry_params
     params.require(:dailyentry).permit(:rating, :content, :user_id, :prompt_id)
