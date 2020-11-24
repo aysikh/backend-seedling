@@ -1,6 +1,7 @@
 Prompt.destroy_all
 Mood.destroy_all
 Goal.destroy_all
+User.destroy_all
 
 Prompt.create(
   statement: "Today, I will...",

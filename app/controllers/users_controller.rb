@@ -29,12 +29,24 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(user_params)
+    @user = User.new(
+      name: params[:name], 
+      email: params[:email],
+      password: params[:password]
+    )
     if @user.save
+      params[:goals].each do |k, v|
+        goal = Goal.find_by(name: k)
+        UserGoal.create(
+          goal: goal,
+          user: @user
+        )
+      end
       login!
       render json: {
         status: :created,
-        user: @user
+        user: @user,
+        goals: @user.goals
       }
     else 
       render json: {
@@ -51,7 +63,7 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit(:name, :email, :password, :password_confirmation)
+    params.require(:user).permit(:name, :email, :password, :goal_id)
   end
 
 end
