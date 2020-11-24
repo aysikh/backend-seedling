@@ -3,6 +3,12 @@ Mood.destroy_all
 Goal.destroy_all
 User.destroy_all
 
+User.create(
+  name: "aymes", 
+  email: "nugget@gmail.com",
+  password: "nugget"
+)
+
 Prompt.create(
   statement: "Today, I will...",
   group: "Morning"
