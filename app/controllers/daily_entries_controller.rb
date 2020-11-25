@@ -1,5 +1,6 @@
 class DailyEntriesController < ApplicationController
-
+  before_action :find_daily_entries, only: [:show, :edit]
+  
   def index
     @dailyentries = DailyEntry.all
     render json: @dailyentries
@@ -7,6 +8,11 @@ class DailyEntriesController < ApplicationController
 
   def show
     @dailyentry = DailyEntry.find(params[:id])
+    render json: @dailyentry
+  end
+
+  def new
+    @dailyentry = DailyEntry.new(params[:id])
     render json: @dailyentry
   end
 
@@ -34,6 +40,9 @@ class DailyEntriesController < ApplicationController
     end
   end
 
+  def edit
+  end
+
   def update
     @dailyentry = DailyEntry.find(params[:id])
     @dailyentry.update(
@@ -42,9 +51,11 @@ class DailyEntriesController < ApplicationController
   end
 
 
-  # private
+  private
   
-
+  def find_daily_entries
+    @dailyentry = DailyEntry.find(params[:id])
+  end
   # def daily_entry_params
   #   params.require(:dailyentry).permit(:rating, :content, :user_id, :prompt_id)
   # end

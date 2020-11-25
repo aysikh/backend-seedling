@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :blog_posts
   # resources :user_goals
   # resources :activity_entries
   # resources :mood_entries

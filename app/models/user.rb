@@ -3,6 +3,7 @@ class User < ApplicationRecord
   has_many :daily_entries
   has_many :user_goals
   has_many :goals, through: :user_goals
+  has_many :blog_posts
 
   validates :name, presence: true
   validates :name, uniqueness: true
