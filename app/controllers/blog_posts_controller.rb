@@ -2,7 +2,7 @@ class BlogPostsController < ApplicationController
     before_action :find_blog_posts, only: [:show, :edit]
 
     def index
-        @blogposts = BlogPosts.all
+        @blogposts = BlogPost.all
         render json: @blogposts
     end
 

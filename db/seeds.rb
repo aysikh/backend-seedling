@@ -2,6 +2,12 @@ Prompt.destroy_all
 Mood.destroy_all
 Goal.destroy_all
 User.destroy_all
+BlogPost.destroy_all
+
+BlogPost.create(
+  title: "dummy post",
+  content: "I am thankful for Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ipsum purus, bibendum sit amet vulputate eget, porta semper ligula. Donec bibendum vulputate erat, ac fringilla mi finibus nec. Donec ac dolor sed dolor porttitor blandit vel vel purus. Fusce vel malesuada ligula. Nam quis vehicula ante, eu finibus est. Proin ullamcorper fermentum orci, quis finibus massa. Nunc lobortis, massa ut rutrum ultrices, metus metus finibus ex, sit amet facilisis neque enim sed neque. Quisque accumsan metus vel maximus consequat. Suspendisse lacinia tellus a libero volutpat maximus."
+)
 
 User.create(
   name: "aymes", 
@@ -29,18 +35,7 @@ Prompt.create(
   statement: "Today I will challenge myself by...",
   group: "Morning"
 )
-Prompt.create(
-  statement: "Something money can't buy that I am grateful for is...",
-  group: "Morning"
-)
-Prompt.create(
-  statement: "I will not let ______ get in my way of my happiness",
-  group: "Morning"
-)
-Prompt.create(
-  statement: "What do I need to give up, say no to, or let go of?",
-  group: "Morning"
-)
+
 Prompt.create(
   statement: "I will prioritize myself by...",
   group: "Morning"
@@ -106,7 +101,7 @@ Prompt.create(
   group: "Night"
 )
 Prompt.create(
-  statement: "Today I thanked someone for...",
+  statement: "I am very thankful for...",
   group: "Night"
 )
 Prompt.create(
@@ -126,11 +121,11 @@ Prompt.create(
   group: "Night"
 )
 Prompt.create(
-  statement: "What made you laugh today?",
+  statement: "What made me laugh today?",
   group: "Night"
 )
 Prompt.create(
-  statement: "Today I told someone I loved them and that someone is...",
+  statement: "Today I told someone I loved them because...",
   group: "Night"
 )
 Prompt.create(
