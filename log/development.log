@@ -13592,3 +13592,2335 @@ Processing by DailyEntriesController#index as HTML
 Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1080)
 
 
+Started GET "/logged_in" for ::1 at 2020-11-28 18:04:44 -0500
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 181)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 18:04:51 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 101)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 18:04:56 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 101)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 18:06:02 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 101)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 18:31:04 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/moods" for ::1 at 2020-11-28 18:31:06 -0500
+Started GET "/prompts" for ::1 at 2020-11-28 18:31:06 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:31:06 -0500
+Processing by MoodsController#index as HTML
+  [1m[36mMood Load (4.6ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (4.2ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 30ms (Views: 0.2ms | ActiveRecord: 16.0ms | Allocations: 8653)
+
+
+Completed 200 OK in 86ms (Views: 0.1ms | ActiveRecord: 59.4ms | Allocations: 27629)
+
+
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 78ms (Views: 0.6ms | ActiveRecord: 57.3ms | Allocations: 25489)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 18:31:10 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.8ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 27ms (Views: 7.9ms | ActiveRecord: 10.3ms | Allocations: 8872)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:31:11 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:31:11 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:31:11 -0500
+Processing by UsersController#show as HTML
+Processing by PromptsController#index as HTML
+Processing by MoodsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  [1m[36mMood Load (1.7ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 1.7ms | Allocations: 9913)
+
+
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 4559)
+
+
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 1.0ms | Allocations: 10215)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:31:16 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:31:16 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:31:16 -0500
+Processing by PromptsController#index as HTML
+Processing by MoodsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (2.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 5283)
+
+
+  [1m[36mMood Load (5.7ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 32ms (Views: 0.1ms | ActiveRecord: 5.7ms | Allocations: 9721)
+
+
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 34ms (Views: 0.5ms | ActiveRecord: 2.3ms | Allocations: 10487)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 18:34:13 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:34:15 -0500
+Processing by PromptsController#index as HTML
+Started GET "/moods" for ::1 at 2020-11-28 18:34:15 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:34:15 -0500
+Processing by MoodsController#index as HTML
+  [1m[36mPrompt Load (6.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  [1m[36mMood Load (2.0ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 6.6ms | Allocations: 6110)
+
+
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Processing by UsersController#show as HTML
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 2.0ms | Allocations: 10165)
+
+
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 766)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 18:34:17 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 18:34:21 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.3ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1080)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:34:27 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:34:27 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:34:27 -0500
+Processing by PromptsController#index as HTML
+Processing by MoodsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (5.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  [1m[36mMood Load (1.9ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 5.0ms | Allocations: 5661)
+
+
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 1.9ms | Allocations: 9485)
+
+
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 4.4ms | Allocations: 10455)
+
+
+Started POST "/daily_entries" for ::1 at 2020-11-28 18:38:09 -0500
+Processing by DailyEntriesController#create as */*
+  Parameters: {"rating"=>"3", "content"=>"Before I give a rash response, I will consider other's feelings first. Always be kind (: ", "user_id"=>1, "prompt_id"=>12, "daily_entry"=>{"rating"=>"3", "content"=>"Before I give a rash response, I will consider other's feelings first. Always be kind (: ", "user_id"=>1, "prompt_id"=>12}}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/daily_entries_controller.rb:21:in `create'
+  [1m[36mPrompt Load (3.2ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/daily_entries_controller.rb:22:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/daily_entries_controller.rb:30:in `create'
+  [1m[36mDailyEntry Create (21.6ms)[0m  [1m[32mINSERT INTO "daily_entries" ("rating", "content", "user_id", "prompt_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["rating", 3], ["content", "Before I give a rash response, I will consider other's feelings first. Always be kind (: "], ["user_id", 1], ["prompt_id", 12], ["created_at", "2020-11-28 23:38:09.399129"], ["updated_at", "2020-11-28 23:38:09.399129"]]
+  ↳ app/controllers/daily_entries_controller.rb:30:in `create'
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/daily_entries_controller.rb:30:in `create'
+Completed 200 OK in 57ms (Views: 0.4ms | ActiveRecord: 30.3ms | Allocations: 6404)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 18:38:11 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.6ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.6ms | Allocations: 1222)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 18:38:25 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.5ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.5ms | Allocations: 1207)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:40:25 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:40:25 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:40:25 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (1.2ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 4328)
+
+
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by MoodsController#index as HTML
+  [1m[36mMood Load (1.0ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 5205)
+
+
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 1.7ms | Allocations: 6235)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 18:42:12 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 18:42:26 -0500
+Started GET "/prompts" for ::1 at 2020-11-28 18:42:26 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:42:26 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Started GET "/users/1" for ::1 at 2020-11-28 18:42:26 -0500
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Processing by PromptsController#index as HTML
+Processing by MoodsController#index as HTML
+  [1m[36mMood Load (3.2ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 3.2ms | Allocations: 5088)
+
+
+  [1m[36mPrompt Load (11.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+Processing by UsersController#show as HTML
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 36ms (Views: 0.2ms | ActiveRecord: 11.8ms | Allocations: 10272)
+
+
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 3.6ms | Allocations: 960)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:42:30 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:42:30 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:42:30 -0500
+Processing by PromptsController#index as HTML
+Processing by MoodsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMood Load (1.0ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  [1m[36mPrompt Load (1.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.8ms | Allocations: 5508)
+
+
+  ↳ app/controllers/users_controller.rb:18:in `show'
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.7ms | ActiveRecord: 1.1ms | Allocations: 5770)
+
+
+Completed 200 OK in 18ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 10384)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 18:42:33 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 18:42:55 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (1.6ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 1.6ms | Allocations: 1222)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:47:49 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:47:49 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:47:49 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 4328)
+
+
+Processing by MoodsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMood Load (0.9ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 5249)
+
+
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 1.5ms | Allocations: 6141)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 18:47:52 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.7ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.7ms | Allocations: 1239)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 18:48:02 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (1.7ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 1.7ms | Allocations: 1207)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:50:21 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:50:21 -0500
+Processing by PromptsController#index as HTML
+Started GET "/users/1" for ::1 at 2020-11-28 18:50:21 -0500
+Processing by MoodsController#index as HTML
+Processing by UsersController#show as HTML
+  [1m[36mMood Load (1.7ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  [1m[36mPrompt Load (5.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  Parameters: {"id"=>"1"}
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 1.7ms | Allocations: 6266)
+
+
+Completed 200 OK in 29ms (Views: 0.1ms | ActiveRecord: 5.7ms | Allocations: 10738)
+
+
+  [1m[36mUser Load (9.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 30ms (Views: 0.4ms | ActiveRecord: 20.0ms | Allocations: 9477)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 18:50:39 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 18:50:40 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 18:50:41 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 18:50:43 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:52:32 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:52:32 -0500
+Processing by PromptsController#index as HTML
+Started GET "/users/1" for ::1 at 2020-11-28 18:52:32 -0500
+Processing by MoodsController#index as HTML
+  [1m[36mPrompt Load (3.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Processing by UsersController#show as HTML
+  [1m[36mMood Load (9.8ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 3.0ms | Allocations: 5607)
+
+
+  Parameters: {"id"=>"1"}
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 19ms (Views: 0.1ms | ActiveRecord: 9.8ms | Allocations: 10225)
+
+
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 10.1ms | Allocations: 5567)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:52:36 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:52:36 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:52:36 -0500
+Started GET "/logged_in" for ::1 at 2020-11-28 18:52:36 -0500
+Processing by PromptsController#index as HTML
+Processing by MoodsController#index as HTML
+  [1m[36mPrompt Load (14.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+Processing by UsersController#show as HTML
+  [1m[36mMood Load (1.7ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  Parameters: {"id"=>"1"}
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 21ms (Views: 0.1ms | ActiveRecord: 14.5ms | Allocations: 6335)
+
+
+Completed 200 OK in 46ms (Views: 0.1ms | ActiveRecord: 1.7ms | Allocations: 10021)
+
+
+  [1m[36mUser Load (40.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 44ms (Views: 0.7ms | ActiveRecord: 40.1ms | Allocations: 5764)
+
+
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:52:39 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:52:39 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:52:39 -0500
+Processing by MoodsController#index as HTML
+Processing by PromptsController#index as HTML
+Processing by UsersController#show as HTML
+  [1m[36mMood Load (2.5ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  [1m[36mPrompt Load (1.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  Parameters: {"id"=>"1"}
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.8ms | Allocations: 5568)
+
+
+  [1m[36mUser Load (10.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 10208)
+
+
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 10.2ms | Allocations: 9471)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:53:36 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:53:36 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:53:36 -0500
+Processing by PromptsController#index as HTML
+Processing by MoodsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMood Load (1.4ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  [1m[36mPrompt Load (2.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.4ms | Allocations: 5934)
+
+
+  [1m[36mUser Load (13.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 10138)
+
+
+Completed 200 OK in 17ms (Views: 0.5ms | ActiveRecord: 13.7ms | Allocations: 10310)
+
+
+Started GET "/moods" for ::1 at 2020-11-28 18:53:57 -0500
+Started GET "/prompts" for ::1 at 2020-11-28 18:53:57 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:53:57 -0500
+Processing by PromptsController#index as HTML
+Processing by UsersController#show as HTML
+Processing by MoodsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (1.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  [1m[36mMood Load (0.9ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 2.0ms | Allocations: 10070)
+
+
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 5706)
+
+
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 1.4ms | Allocations: 9581)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:55:26 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:55:26 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:55:26 -0500
+Processing by PromptsController#index as HTML
+Processing by MoodsController#index as HTML
+Processing by UsersController#show as HTML
+  [1m[36mPrompt Load (0.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  Parameters: {"id"=>"1"}
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  [1m[36mMood Load (0.4ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 4531)
+
+
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 9685)
+
+
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 4.8ms | Allocations: 9897)
+
+
+Started GET "/moods" for ::1 at 2020-11-28 18:55:32 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:55:32 -0500
+Started GET "/prompts" for ::1 at 2020-11-28 18:55:32 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by PromptsController#index as HTML
+Processing by MoodsController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrompt Load (1.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/users_controller.rb:18:in `show'
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  [1m[36mMood Load (1.7ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.9ms | Allocations: 2026)
+
+
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 5181)
+
+
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 1.7ms | Allocations: 10495)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:55:33 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:55:33 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:55:33 -0500
+Processing by PromptsController#index as HTML
+Processing by MoodsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  [1m[36mMood Load (1.0ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 5054)
+
+
+  ↳ app/controllers/users_controller.rb:18:in `show'
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 1.0ms | Allocations: 5737)
+
+
+Completed 200 OK in 24ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 10389)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:55:37 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:55:37 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:55:37 -0500
+Processing by PromptsController#index as HTML
+Processing by UsersController#show as HTML
+Processing by MoodsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (3.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMood Load (1.8ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 3.4ms | Allocations: 5101)
+
+
+  ↳ app/controllers/users_controller.rb:18:in `show'
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 5737)
+
+
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 1.8ms | Allocations: 10375)
+
+
+Started GET "/moods" for ::1 at 2020-11-28 18:55:55 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:55:55 -0500
+Started GET "/prompts" for ::1 at 2020-11-28 18:55:55 -0500
+Processing by UsersController#show as HTML
+Processing by PromptsController#index as HTML
+  Parameters: {"id"=>"1"}
+Processing by MoodsController#index as HTML
+  [1m[36mMood Load (0.7ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.9ms | ActiveRecord: 0.7ms | Allocations: 5088)
+
+
+  [1m[36mPrompt Load (11.1ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  [1m[36mUser Load (9.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 21ms (Views: 0.1ms | ActiveRecord: 11.1ms | Allocations: 10409)
+
+
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 9.9ms | Allocations: 10356)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:55:59 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 4328)
+
+
+Started GET "/moods" for ::1 at 2020-11-28 18:55:59 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:55:59 -0500
+Processing by MoodsController#index as HTML
+  [1m[36mMood Load (0.4ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 5088)
+
+
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 1.5ms | Allocations: 765)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:56:08 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:56:08 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:56:08 -0500
+Processing by PromptsController#index as HTML
+Processing by MoodsController#index as HTML
+  [1m[36mPrompt Load (2.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 2.5ms | Allocations: 5343)
+
+
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMood Load (12.4ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 23ms (Views: 0.5ms | ActiveRecord: 12.4ms | Allocations: 10236)
+
+
+  [1m[36mUser Load (13.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 16ms (Views: 0.6ms | ActiveRecord: 13.0ms | Allocations: 6053)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:56:10 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:56:10 -0500
+Processing by PromptsController#index as HTML
+Processing by MoodsController#index as HTML
+  [1m[36mPrompt Load (2.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Started GET "/users/1" for ::1 at 2020-11-28 18:56:10 -0500
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 2.4ms | Allocations: 5288)
+
+
+  [1m[36mMood Load (2.6ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 2.6ms | Allocations: 9885)
+
+
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 765)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:56:13 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:56:13 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:56:13 -0500
+Processing by PromptsController#index as HTML
+Processing by MoodsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 1.5ms | Allocations: 934)
+
+
+  [1m[36mPrompt Load (10.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 19ms (Views: 0.1ms | ActiveRecord: 10.7ms | Allocations: 5337)
+
+
+  [1m[36mMood Load (18.0ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 41ms (Views: 1.1ms | ActiveRecord: 18.0ms | Allocations: 10897)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:56:15 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:56:15 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:56:15 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (1.1ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Processing by UsersController#show as HTML
+Processing by MoodsController#index as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 4901)
+
+
+  [1m[36mMood Load (0.6ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 5360)
+
+
+  [1m[36mUser Load (10.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 10.2ms | Allocations: 6196)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:56:23 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:56:23 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:56:23 -0500
+Processing by PromptsController#index as HTML
+Processing by UsersController#show as HTML
+Processing by MoodsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (1.1ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  [1m[36mMood Load (0.7ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 0.9ms | Allocations: 10087)
+
+
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 9910)
+
+
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 5491)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:56:28 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:56:28 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:56:28 -0500
+Processing by PromptsController#index as HTML
+Processing by MoodsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMood Load (2.4ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+  [1m[36mPrompt Load (2.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 2.0ms | Allocations: 10106)
+
+
+  [1m[36mUser Load (13.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 2.4ms | Allocations: 5906)
+
+
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 17ms (Views: 0.4ms | ActiveRecord: 13.6ms | Allocations: 10455)
+
+
+Started GET "/moods" for ::1 at 2020-11-28 18:56:35 -0500
+Started GET "/prompts" for ::1 at 2020-11-28 18:56:35 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:56:35 -0500
+Processing by MoodsController#index as HTML
+Processing by PromptsController#index as HTML
+  [1m[36mMood Load (0.6ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 5217)
+
+
+  [1m[36mPrompt Load (1.1ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 10163)
+
+
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.4ms | Allocations: 765)
+
+
+Started GET "/moods" for ::1 at 2020-11-28 18:56:48 -0500
+Started GET "/prompts" for ::1 at 2020-11-28 18:56:48 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:56:48 -0500
+Processing by MoodsController#index as HTML
+Processing by PromptsController#index as HTML
+Processing by UsersController#show as HTML
+  [1m[36mMood Load (2.2ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (1.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 2.2ms | Allocations: 6554)
+
+
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 1.3ms | Allocations: 10691)
+
+
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 3.9ms | Allocations: 9746)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:56:57 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:56:57 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:56:57 -0500
+Processing by PromptsController#index as HTML
+Processing by MoodsController#index as HTML
+  [1m[36mPrompt Load (2.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+Processing by UsersController#show as HTML
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  [1m[36mMood Load (2.1ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 2.0ms | Allocations: 5599)
+
+
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 2.1ms | Allocations: 10225)
+
+
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 5.5ms | Allocations: 5689)
+
+
+Started GET "/moods" for ::1 at 2020-11-28 18:57:27 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:57:27 -0500
+Started GET "/prompts" for ::1 at 2020-11-28 18:57:27 -0500
+Processing by UsersController#show as HTML
+Processing by MoodsController#index as HTML
+  Parameters: {"id"=>"1"}
+Processing by PromptsController#index as HTML
+  [1m[36mMood Load (1.7ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+  [1m[36mPrompt Load (1.2ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.7ms | Allocations: 5918)
+
+
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 1.0ms | Allocations: 10373)
+
+
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 10006)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:57:32 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:57:32 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:57:32 -0500
+Processing by MoodsController#index as HTML
+Processing by PromptsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMood Load (0.9ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  [1m[36mPrompt Load (0.9ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  [1m[36mUser Load (7.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 9469)
+
+
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 5779)
+
+
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 7.2ms | Allocations: 10459)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:57:51 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:57:51 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:57:51 -0500
+Processing by PromptsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by MoodsController#index as HTML
+  [1m[36mPrompt Load (0.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 4728)
+
+
+  [1m[36mMood Load (4.0ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 0.9ms | Allocations: 5824)
+
+
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 4.0ms | Allocations: 10473)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:58:31 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:58:31 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:58:31 -0500
+Processing by PromptsController#index as HTML
+Processing by UsersController#show as HTML
+Processing by MoodsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  [1m[36mMood Load (1.0ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 4527)
+
+
+  ↳ app/controllers/users_controller.rb:18:in `show'
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 3.5ms | Allocations: 5733)
+
+
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 10373)
+
+
+Started GET "/users/1" for ::1 at 2020-11-28 18:58:47 -0500
+Started GET "/prompts" for ::1 at 2020-11-28 18:58:47 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:58:47 -0500
+Processing by PromptsController#index as HTML
+Processing by UsersController#show as HTML
+Processing by MoodsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (1.1ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  [1m[36mMood Load (1.8ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 4558)
+
+
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 1.8ms | Allocations: 9460)
+
+
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 1.0ms | Allocations: 10477)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:58:51 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:58:51 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:58:51 -0500
+Processing by PromptsController#index as HTML
+Processing by UsersController#show as HTML
+Processing by MoodsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.9ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  ↳ app/controllers/users_controller.rb:18:in `show'
+  [1m[36mMood Load (0.6ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 4995)
+
+
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 5068)
+
+
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 10568)
+
+
+Started GET "/moods" for ::1 at 2020-11-28 18:59:23 -0500
+Started GET "/prompts" for ::1 at 2020-11-28 18:59:23 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:59:23 -0500
+Processing by UsersController#show as HTML
+Processing by MoodsController#index as HTML
+  Parameters: {"id"=>"1"}
+Processing by PromptsController#index as HTML
+  [1m[36mMood Load (0.9ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrompt Load (1.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/users_controller.rb:18:in `show'
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 1882)
+
+
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 5579)
+
+
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 10274)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:59:40 -0500
+Processing by PromptsController#index as HTML
+Started GET "/moods" for ::1 at 2020-11-28 18:59:40 -0500
+  [1m[36mPrompt Load (0.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+Started GET "/users/1" for ::1 at 2020-11-28 18:59:40 -0500
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 4811)
+
+
+Processing by UsersController#show as HTML
+Processing by MoodsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMood Load (0.8ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 5192)
+
+
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 1.0ms | Allocations: 6001)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:59:44 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:59:44 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:59:44 -0500
+Processing by PromptsController#index as HTML
+Processing by UsersController#show as HTML
+Processing by MoodsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (1.1ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMood Load (0.7ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/users_controller.rb:18:in `show'
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 4566)
+
+
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 5556)
+
+
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 10182)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:59:47 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:59:47 -0500
+Processing by PromptsController#index as HTML
+Started GET "/users/1" for ::1 at 2020-11-28 18:59:47 -0500
+  [1m[36mPrompt Load (0.9ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+Started GET "/logged_in" for ::1 at 2020-11-28 18:59:47 -0500
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Processing by MoodsController#index as HTML
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 5496)
+
+
+  [1m[36mMood Load (1.1ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Processing by UsersController#show as HTML
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 6285)
+
+
+Processing by SessionsController#is_logged_in? as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 1.1ms | Allocations: 1456)
+
+
+Started GET "/moods" for ::1 at 2020-11-28 18:59:57 -0500
+Started GET "/prompts" for ::1 at 2020-11-28 18:59:57 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:59:57 -0500
+Processing by MoodsController#index as HTML
+  [1m[36mMood Load (1.6ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 1.6ms | Allocations: 5088)
+
+
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by PromptsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+  [1m[36mPrompt Load (1.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.7ms | Allocations: 874)
+
+
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 5259)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 18:59:58 -0500
+Started GET "/moods" for ::1 at 2020-11-28 18:59:58 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 18:59:58 -0500
+Processing by PromptsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by MoodsController#index as HTML
+  [1m[36mPrompt Load (1.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMood Load (1.4ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/users_controller.rb:18:in `show'
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 10105)
+
+
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.5ms | Allocations: 5759)
+
+
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 1.2ms | Allocations: 1884)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 19:00:12 -0500
+Started GET "/moods" for ::1 at 2020-11-28 19:00:12 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 19:00:12 -0500
+Processing by PromptsController#index as HTML
+Processing by MoodsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  [1m[36mMood Load (0.8ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 5061)
+
+
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 9920)
+
+
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 10213)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 19:00:18 -0500
+Started GET "/moods" for ::1 at 2020-11-28 19:00:18 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 19:00:18 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (1.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.4ms | Allocations: 4337)
+
+
+Processing by MoodsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 1.0ms | Allocations: 765)
+
+
+  [1m[36mMood Load (3.4ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 3.4ms | Allocations: 6327)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 19:00:30 -0500
+Started GET "/moods" for ::1 at 2020-11-28 19:00:30 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 19:00:30 -0500
+Processing by PromptsController#index as HTML
+Processing by MoodsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (1.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  [1m[36mMood Load (1.6ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.3ms | Allocations: 4750)
+
+
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 1.6ms | Allocations: 10118)
+
+
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 4.3ms | Allocations: 10260)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 19:00:36 -0500
+Started GET "/moods" for ::1 at 2020-11-28 19:00:36 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 19:00:36 -0500
+Processing by UsersController#show as HTML
+Processing by MoodsController#index as HTML
+Processing by PromptsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMood Load (0.9ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 5734)
+
+
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 6320)
+
+
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 10321)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 19:00:37 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 19:00:37 -0500
+Started GET "/moods" for ::1 at 2020-11-28 19:00:37 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by PromptsController#index as HTML
+  ↳ app/controllers/users_controller.rb:18:in `show'
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+Processing by MoodsController#index as HTML
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 1978)
+
+
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 5078)
+
+
+  [1m[36mMood Load (5.1ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 5.1ms | Allocations: 9245)
+
+
+Started GET "/users/1" for ::1 at 2020-11-28 19:02:08 -0500
+Started GET "/prompts" for ::1 at 2020-11-28 19:02:08 -0500
+Started GET "/moods" for ::1 at 2020-11-28 19:02:08 -0500
+Processing by PromptsController#index as HTML
+Processing by MoodsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.9ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  [1m[36mMood Load (1.2ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 5483)
+
+
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 9902)
+
+
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 10210)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 19:02:31 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (1.0ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 1.0ms | Allocations: 1222)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 19:02:33 -0500
+Started GET "/moods" for ::1 at 2020-11-28 19:02:33 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 19:02:33 -0500
+Processing by PromptsController#index as HTML
+Processing by MoodsController#index as HTML
+Processing by UsersController#show as HTML
+  [1m[36mPrompt Load (3.2ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  Parameters: {"id"=>"1"}
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 3.2ms | Allocations: 5635)
+
+
+  [1m[36mMood Load (6.8ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 6.8ms | Allocations: 10117)
+
+
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 5.4ms | Allocations: 9769)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 19:02:36 -0500
+Started GET "/moods" for ::1 at 2020-11-28 19:02:36 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 19:02:36 -0500
+Processing by PromptsController#index as HTML
+Processing by UsersController#show as HTML
+Processing by MoodsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (1.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  [1m[36mMood Load (1.0ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 5714)
+
+
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 1.5ms | Allocations: 10213)
+
+
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 1.4ms | Allocations: 10282)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 19:02:38 -0500
+Started GET "/moods" for ::1 at 2020-11-28 19:02:38 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 19:02:38 -0500
+Processing by PromptsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by MoodsController#index as HTML
+  [1m[36mPrompt Load (0.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  [1m[36mMood Load (1.2ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 5183)
+
+
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 5632)
+
+
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 10278)
+
+
+Started GET "/users/1" for ::1 at 2020-11-28 19:02:40 -0500
+Started GET "/moods" for ::1 at 2020-11-28 19:02:40 -0500
+Started GET "/prompts" for ::1 at 2020-11-28 19:02:40 -0500
+Processing by PromptsController#index as HTML
+Processing by UsersController#show as HTML
+Processing by MoodsController#index as HTML
+  [1m[36mPrompt Load (1.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  Parameters: {"id"=>"1"}
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  [1m[36mMood Load (1.5ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.5ms | Allocations: 5066)
+
+
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 5.3ms | Allocations: 9755)
+
+
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 1.5ms | Allocations: 10087)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 19:02:41 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.4ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms | Allocations: 1207)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 19:02:54 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+Started GET "/moods" for ::1 at 2020-11-28 19:02:54 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 19:02:54 -0500
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 4930)
+
+
+Processing by MoodsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMood Load (0.7ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 5209)
+
+
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 6001)
+
+
+Started GET "/moods" for ::1 at 2020-11-28 19:05:41 -0500
+Started GET "/prompts" for ::1 at 2020-11-28 19:05:41 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 19:05:41 -0500
+Processing by PromptsController#index as HTML
+Processing by MoodsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (1.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  [1m[36mMood Load (1.3ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 5719)
+
+
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 0.5ms | Allocations: 6320)
+
+
+Completed 200 OK in 26ms (Views: 0.1ms | ActiveRecord: 1.7ms | Allocations: 10484)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 19:08:55 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 19:12:01 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 19:12:02 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 19:24:49 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 19:26:17 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 19:30:00 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 19:30:25 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 19:31:31 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 19:34:29 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (3.5ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 13ms (Views: 9.0ms | ActiveRecord: 3.5ms | Allocations: 1275)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 19:34:29 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.5ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.5ms | Allocations: 1207)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 19:34:32 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.6ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+Started GET "/logged_in" for ::1 at 2020-11-28 19:34:32 -0500
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.6ms | Allocations: 1522)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 19:34:32 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (2.3ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 2.3ms | Allocations: 1207)
+
+
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 19:34:42 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 19:44:05 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 19:45:46 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 19:45:49 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 19:47:21 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 19:47:23 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:05:58 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:06:01 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:07:31 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:07:31 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:07:53 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:09:54 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:09:56 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:10:04 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:11:29 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:12:37 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 20:12:58 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 20:12:58 -0500
+Started GET "/moods" for ::1 at 2020-11-28 20:12:58 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (9.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 25ms (Views: 0.1ms | ActiveRecord: 9.0ms | Allocations: 4401)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 20:12:58 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 4456)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 20:12:58 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 4328)
+
+
+Processing by MoodsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMood Load (3.8ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 3.8ms | Allocations: 5293)
+
+
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 2.2ms | Allocations: 5946)
+
+
+Started GET "/moods" for ::1 at 2020-11-28 20:12:58 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 20:12:58 -0500
+Processing by MoodsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMood Load (0.8ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 5204)
+
+
+  [1m[36mUser Load (6.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 6.9ms | Allocations: 6029)
+
+
+Started GET "/moods" for ::1 at 2020-11-28 20:12:58 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 20:12:58 -0500
+Processing by MoodsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMood Load (1.0ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 5638)
+
+
+Completed 200 OK in 12ms (Views: 0.6ms | ActiveRecord: 0.5ms | Allocations: 5806)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:13:12 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:13:14 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:13:28 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:13:36 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:13:39 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:13:46 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:14:54 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:14:55 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 20:15:02 -0500
+Started GET "/moods" for ::1 at 2020-11-28 20:15:02 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 20:15:02 -0500
+Processing by PromptsController#index as HTML
+Processing by MoodsController#index as HTML
+Processing by UsersController#show as HTML
+  [1m[36mPrompt Load (4.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  [1m[36mMood Load (1.4ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  Parameters: {"id"=>"1"}
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 4.7ms | Allocations: 6099)
+
+
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 1.4ms | Allocations: 10048)
+
+
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 8.8ms | Allocations: 5710)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:36:19 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:36:22 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:36:53 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:38:56 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:40:51 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:41:34 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:43:03 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:43:52 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 20:44:29 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (7.5ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 33ms (Views: 21.0ms | ActiveRecord: 7.5ms | Allocations: 1275)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 20:44:29 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.4ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.4ms | Allocations: 1207)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:44:43 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:51:08 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:51:14 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:51:32 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 20:52:15 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 20:52:15 -0500
+Started GET "/moods" for ::1 at 2020-11-28 20:52:15 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 4402)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 20:52:15 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 4684)
+
+
+Processing by MoodsController#index as HTML
+  [1m[36mMood Load (2.5ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 6341)
+
+
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/moods" for ::1 at 2020-11-28 20:52:15 -0500
+Processing by MoodsController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+  [1m[36mMood Load (0.9ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 2.4ms | Allocations: 1724)
+
+
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 5991)
+
+
+Started GET "/users/1" for ::1 at 2020-11-28 20:52:15 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 793)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 20:54:30 -0500
+Started GET "/moods" for ::1 at 2020-11-28 20:54:30 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 20:54:30 -0500
+Processing by PromptsController#index as HTML
+Processing by MoodsController#index as HTML
+Processing by UsersController#show as HTML
+  [1m[36mPrompt Load (1.9ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  Parameters: {"id"=>"1"}
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  [1m[36mMood Load (1.4ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 1.9ms | Allocations: 5707)
+
+
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 9697)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 20:54:30 -0500
+Started GET "/moods" for ::1 at 2020-11-28 20:54:30 -0500
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 23ms (Views: 0.5ms | ActiveRecord: 10.8ms | Allocations: 11032)
+
+
+Processing by PromptsController#index as HTML
+Processing by MoodsController#index as HTML
+Started GET "/users/1" for ::1 at 2020-11-28 20:54:30 -0500
+  [1m[36mMood Load (1.0ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+  [1m[36mPrompt Load (2.2ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 5399)
+
+
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 2.2ms | Allocations: 10002)
+
+
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 765)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:54:35 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:54:55 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:54:57 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:55:21 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/moods" for ::1 at 2020-11-28 20:55:23 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 20:55:23 -0500
+Started GET "/prompts" for ::1 at 2020-11-28 20:55:23 -0500
+Processing by MoodsController#index as HTML
+Processing by UsersController#show as HTML
+Processing by PromptsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMood Load (5.0ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 5.0ms | Allocations: 6403)
+
+
+  [1m[36mUser Load (9.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrompt Load (10.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 21ms (Views: 0.1ms | ActiveRecord: 10.3ms | Allocations: 10105)
+
+
+Completed 200 OK in 21ms (Views: 0.5ms | ActiveRecord: 9.2ms | Allocations: 10280)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 20:55:26 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 20:55:26 -0500
+Started GET "/moods" for ::1 at 2020-11-28 20:55:26 -0500
+Started GET "/logged_in" for ::1 at 2020-11-28 20:55:26 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (1.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+Processing by UsersController#show as HTML
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  Parameters: {"id"=>"1"}
+Processing by MoodsController#index as HTML
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 5846)
+
+
+  [1m[36mUser Load (7.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMood Load (1.0ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 7.7ms | Allocations: 5338)
+
+
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 6396)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 20:55:26 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 20:55:26 -0500
+Started GET "/moods" for ::1 at 2020-11-28 20:55:26 -0500
+Processing by UsersController#show as HTML
+Processing by MoodsController#index as HTML
+Processing by PromptsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMood Load (1.1ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  [1m[36mPrompt Load (0.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 5379)
+
+
+  ↳ app/controllers/users_controller.rb:18:in `show'
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 11635)
+
+
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 5755)
+
+
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:55:37 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:55:49 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:55:59 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:56:40 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:56:49 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:56:57 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:56:59 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:57:01 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:57:26 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 20:57:31 -0500
+Started GET "/moods" for ::1 at 2020-11-28 20:57:31 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 20:57:31 -0500
+Processing by MoodsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by PromptsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 1.2ms | Allocations: 900)
+
+
+  [1m[36mPrompt Load (1.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  [1m[36mMood Load (3.3ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 1.0ms | Allocations: 5773)
+
+
+Completed 200 OK in 18ms (Views: 0.1ms | ActiveRecord: 3.3ms | Allocations: 10539)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 20:57:42 -0500
+Started GET "/moods" for ::1 at 2020-11-28 20:57:42 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 20:57:42 -0500
+Processing by UsersController#show as HTML
+Processing by PromptsController#index as HTML
+Processing by MoodsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (1.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMood Load (5.4ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 4540)
+
+
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 15ms (Views: 0.6ms | ActiveRecord: 1.0ms | Allocations: 10297)
+
+
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 5.4ms | Allocations: 9921)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 20:57:54 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.9ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.9ms | Allocations: 1222)
+
+
+Started GET "/moods" for ::1 at 2020-11-28 20:57:55 -0500
+Started GET "/prompts" for ::1 at 2020-11-28 20:57:55 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 20:57:55 -0500
+Processing by MoodsController#index as HTML
+Started GET "/logged_in" for ::1 at 2020-11-28 20:57:55 -0500
+Processing by UsersController#show as HTML
+Processing by PromptsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMood Load (1.4ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 20ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 6069)
+
+
+  [1m[36mPrompt Load (18.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+Processing by SessionsController#is_logged_in? as HTML
+  [1m[36mUser Load (17.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 28ms (Views: 0.1ms | ActiveRecord: 18.3ms | Allocations: 10796)
+
+
+Completed 200 OK in 29ms (Views: 0.4ms | ActiveRecord: 17.9ms | Allocations: 11109)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 20:57:58 -0500
+Started GET "/moods" for ::1 at 2020-11-28 20:57:58 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 20:57:58 -0500
+Processing by PromptsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by MoodsController#index as HTML
+  [1m[36mPrompt Load (1.2ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+  [1m[36mMood Load (0.4ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 4562)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 10028)
+
+
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 0.8ms | Allocations: 10373)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 20:58:27 -0500
+Started GET "/moods" for ::1 at 2020-11-28 20:58:27 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 20:58:27 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+Started GET "/logged_in" for ::1 at 2020-11-28 20:58:27 -0500
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 5031)
+
+
+Processing by MoodsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by SessionsController#is_logged_in? as HTML
+Started GET "/prompts" for ::1 at 2020-11-28 20:58:27 -0500
+  [1m[36mMood Load (0.8ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 6789)
+
+
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Started GET "/moods" for ::1 at 2020-11-28 20:58:27 -0500
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 1.4ms | Allocations: 6834)
+
+
+Processing by PromptsController#index as HTML
+Processing by MoodsController#index as HTML
+  [1m[36mPrompt Load (2.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Started GET "/users/1" for ::1 at 2020-11-28 20:58:27 -0500
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 2.0ms | Allocations: 5221)
+
+
+  [1m[36mMood Load (4.3ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 4.3ms | Allocations: 9771)
+
+
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 765)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:58:33 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:58:39 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 20:58:42 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 21:00:12 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 21:00:16 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 21:00:23 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 21:01:09 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 21:02:40 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 21:03:07 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 21:03:09 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 21:03:10 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 21:03:15 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.3ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 1207)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 21:03:15 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.3ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms | Allocations: 1207)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 21:03:29 -0500
+Started GET "/logged_in" for ::1 at 2020-11-28 21:03:29 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.7ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.7ms | Allocations: 1766)
+
+
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 21:03:29 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.5ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.5ms | Allocations: 1222)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 21:14:48 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.6ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 4.5ms | ActiveRecord: 0.6ms | Allocations: 1276)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 21:14:49 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.3ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 1207)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 21:16:18 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (1.2ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 1.2ms | Allocations: 1207)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 21:16:18 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.4ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.4ms | Allocations: 1207)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 21:16:26 -0500
+Started GET "/logged_in" for ::1 at 2020-11-28 21:16:26 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (4.8ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 10ms (Views: 4.7ms | ActiveRecord: 4.8ms | Allocations: 1207)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 21:16:26 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.3ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1207)
+
+
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 21:16:52 -0500
+Started GET "/logged_in" for ::1 at 2020-11-28 21:16:52 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (4.5ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 2.4ms | ActiveRecord: 4.5ms | Allocations: 1328)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 21:16:52 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (4.1ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 2.1ms | ActiveRecord: 4.1ms | Allocations: 1207)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 21:16:56 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 21:29:26 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.7ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.7ms | Allocations: 1275)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 21:29:26 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.4ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.4ms | Allocations: 1207)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 21:31:54 -0500
+Started GET "/logged_in" for ::1 at 2020-11-28 21:31:54 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.3ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1207)
+
+
+Started GET "/daily_entries" for ::1 at 2020-11-28 21:31:54 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.2ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1207)
+
+
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 21:38:31 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 21:39:02 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 21:39:08 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/logged_in" for ::1 at 2020-11-28 21:39:12 -0500
+Processing by SessionsController#is_logged_in? as HTML
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/moods" for ::1 at 2020-11-28 21:39:42 -0500
+Started GET "/prompts" for ::1 at 2020-11-28 21:39:42 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 21:39:42 -0500
+Processing by MoodsController#index as HTML
+  [1m[36mMood Load (5.2ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 21ms (Views: 0.7ms | ActiveRecord: 5.2ms | Allocations: 5395)
+
+
+Started GET "/moods" for ::1 at 2020-11-28 21:39:42 -0500
+Processing by MoodsController#index as HTML
+  [1m[36mMood Load (1.2ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 5088)
+
+
+Processing by PromptsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (2.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 44ms (Views: 0.1ms | ActiveRecord: 2.8ms | Allocations: 4519)
+
+
+  [1m[36mUser Load (39.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 46ms (Views: 0.5ms | ActiveRecord: 39.7ms | Allocations: 5424)
+
+
+Started GET "/prompts" for ::1 at 2020-11-28 21:39:42 -0500
+Started GET "/users/1" for ::1 at 2020-11-28 21:39:42 -0500
+Processing by PromptsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 4446)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 1.3ms | Allocations: 5284)
+
+
