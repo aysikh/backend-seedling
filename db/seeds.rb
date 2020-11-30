@@ -3,6 +3,11 @@ Mood.destroy_all
 Goal.destroy_all
 User.destroy_all
 BlogPost.destroy_all
+DailyEntry.destroy_all
+
+DailyEntry.create(
+  
+)
 
 BlogPost.create(
   title: "dummy post",

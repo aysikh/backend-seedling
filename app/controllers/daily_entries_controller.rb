@@ -45,11 +45,39 @@ class DailyEntriesController < ApplicationController
 
   def update
     @dailyentry = DailyEntry.find(params[:id])
-    @dailyentry.update(
+    if @dailyentry
+      @dailyentry.update(
       rating: params[:rating],
       content: params[:content])
+      render json: {
+        daily_entry: @dailyentry, 
+        errors: false
+        }
+      else
+        render json: {
+          errors: true, 
+          info: ["cannot update info"]
+        }
+      end
   end
 
+  def destroy 
+    daileyentries = DailyEntry.all
+    @dailyentry = find_daily_entries
+    if @dailyentry.destroy
+        render json: {
+            daileyentries: daileyentries, 
+            errors: "Entry has been deleted",
+            success: true
+        }
+    else 
+        render json: {
+            success: false,
+            errors: false,
+            info: ["cannot delete entry"]
+        }
+    end
+end
 
   private
   
