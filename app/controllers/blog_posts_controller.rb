@@ -39,14 +39,27 @@ class BlogPostsController < ApplicationController
     end
 
     def edit
+        
     end
 
     def update
+        # user = User.find(params[:id])
         @blogpost = BlogPost.find(params[:id])
-        @blogpost.update(
-            title: params[:title], 
-            content: params[:content]
-        )
+        if @blogpost 
+            @blogpost.update(
+                title: params[:title], 
+                content: params[:content],
+            )
+            render json: {
+                blog_post: @blogpost, 
+                errors: false
+            }
+        else
+            render json: {
+                errors: true,
+                info: ["post cannot be updated"]
+            }
+        end
     end
 
     def destroy
