@@ -63,10 +63,21 @@ class BlogPostsController < ApplicationController
     end
 
     def destroy
+        blogposts = BlogPost.all
         @blogpost = BlogPost.find(params[:id])
-        @blogpost.destroy
-
-        redirect_to blog_post_path
+        if @blogpost.destroy
+            render json: {
+                blogposts: blogposts, 
+                errors: "Post has been deleted", 
+                success: true
+            }
+        else
+            render json: {
+                success: false, 
+                errors: false,
+                info: ["cannot delete post"]
+            }
+        end
     end
 
 private
