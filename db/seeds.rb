@@ -3,27 +3,26 @@ Mood.destroy_all
 Goal.destroy_all
 User.destroy_all
 BlogPost.destroy_all
-DailyEntry.destroy_all
 
-DailyEntry.create(
-  
-)
 
-BlogPost.create(
-  title: "dummy post",
-  content: "I am thankful for Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ipsum purus, bibendum sit amet vulputate eget, porta semper ligula. Donec bibendum vulputate erat, ac fringilla mi finibus nec. Donec ac dolor sed dolor porttitor blandit vel vel purus. Fusce vel malesuada ligula. Nam quis vehicula ante, eu finibus est. Proin ullamcorper fermentum orci, quis finibus massa. Nunc lobortis, massa ut rutrum ultrices, metus metus finibus ex, sit amet facilisis neque enim sed neque. Quisque accumsan metus vel maximus consequat. Suspendisse lacinia tellus a libero volutpat maximus."
-)
-
-User.create(
+amy = User.create(
   name: "aymes", 
   email: "nugget@gmail.com",
   password: "nugget"
 )
 
+BlogPost.create(
+  title: "dummy post",
+  content: "I am thankful for Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ipsum purus, bibendum sit amet vulputate eget, porta semper ligula. Donec bibendum vulputate erat, ac fringilla mi finibus nec. Donec ac dolor sed dolor porttitor blandit vel vel purus. Fusce vel malesuada ligula. Nam quis vehicula ante, eu finibus est. Proin ullamcorper fermentum orci, quis finibus massa. Nunc lobortis, massa ut rutrum ultrices, metus metus finibus ex, sit amet facilisis neque enim sed neque. Quisque accumsan metus vel maximus consequat. Suspendisse lacinia tellus a libero volutpat maximus.",
+  user_id: amy.id
+)
+
+
 Prompt.create(
   statement: "Today, I will...",
   group: "Morning"
 )
+
 Prompt.create(
   statement: "How will I face any challenges that may come my way?",
   group: "Morning"
@@ -141,10 +140,11 @@ Prompt.create(
   statement: "Right now I am feeling...",
   group: "Night"
 )
-Prompt.create(
+lesson = Prompt.create(
   statement: "What is an important lesson I've learned today or recently?",
   group: "Night"
 )
+
 
 
 

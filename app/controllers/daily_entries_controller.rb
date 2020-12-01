@@ -35,7 +35,7 @@ class DailyEntriesController < ApplicationController
     else
       render json: {
         errors: true, 
-        info: ["try again"]
+        info: ["entry cannot be created"]
       }
     end
   end

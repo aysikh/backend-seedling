@@ -17,9 +17,13 @@ class BlogPostsController < ApplicationController
     end
 
     def create
-        @blogpost = BlogPost.new(
+        # byebug
+        user = User.find(params[:user_id])
+        @blogpost = BlogPost.create(
+            # blog_post_params
             title: params[:title], 
-            content: params[:content]
+            content: params[:content],
+            user: user
         )
         if @blogpost.save
             render json: {
@@ -29,7 +33,7 @@ class BlogPostsController < ApplicationController
         else
             render json: {
                 errors: true,
-                info: ["try again"]
+                info: ["post cannot be submitted"]
             }
         end
     end
@@ -57,5 +61,10 @@ private
     def find_blog_posts
         @blogpost = BlogPost.find(parmas[:id])
     end
+
+    def blog_post_params
+        params.require(:blog_post).permit(:title, :content, :user_id)
+    end
+
 
 end
