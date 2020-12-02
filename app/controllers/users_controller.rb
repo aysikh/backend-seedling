@@ -56,6 +56,23 @@ class UsersController < ApplicationController
     end
   end
 
+
+  def login
+    @user = User.find_by(email: params[:email])
+    if @user && @user.authenticate(params[:password])
+      render json: {
+        errors: false,
+        info: @user
+      }
+    else
+      render json: {
+        errors: true,
+        info: "Woops! Wrong email and/or password! Please try again :)"
+      }
+    end
+
+  end
+
   private
 
   def find_user
