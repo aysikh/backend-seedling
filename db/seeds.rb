@@ -18,64 +18,43 @@ BlogPost.create(
 )
 
 
-x = Prompt.create(
+prompt1 = Prompt.create(
   statement: "Today, I will...",
   group: "Morning"
 )
 
-DailyEntry.create(
-    rating: 5,
-    content: "rad",
-    user_id: amy.id,
-    prompt_id: x.id,
-    date: "2020-12-03T01:33:37.107Z"
-)
-
-DailyEntry.create(
-    rating: 5,
-    content: "rad",
-    user_id: amy.id,
-    prompt_id: x.id,
-    date: "2020-12-02T01:33:37.107Z"
-)
-
-DailyEntry.create(
-    rating: 5,
-    content: "rad",
-    user_id: amy.id,
-    prompt_id: x.id,
-    date: "2020-11-28T01:33:37.107Z"
-)
-
-Prompt.create(
+prompt2 = Prompt.create(
   statement: "How will I face any challenges that may come my way?",
   group: "Morning"
 )
-Prompt.create(
+prompt3 = Prompt.create(
   statement: "One thing I can do to make my day better?",
   group: "Morning"
 )
-Prompt.create(
+prompt4 = Prompt.create(
   statement: "Right now I am feeling...",
   group: "Morning"
 )
-Prompt.create(
+prompt5 = Prompt.create(
   statement: "Today I will challenge myself by...",
   group: "Morning"
 )
 
-Prompt.create(
+prompt6 = Prompt.create(
   statement: "I will prioritize myself by...",
   group: "Morning"
 )
-Prompt.create(
+
+prompt7 = Prompt.create(
   statement: "I am thankful for...",
   group: "Morning"
 )
-Prompt.create(
+
+prompt8 = Prompt.create(
   statement: "I am grateful for...",
   group: "Morning"
 )
+
 Prompt.create(
   statement: "Set your intentions for the day. I intend to...",
   group: "Morning"
@@ -164,166 +143,76 @@ Prompt.create(
   statement: "Right now I am feeling...",
   group: "Night"
 )
-lesson = Prompt.create(
+Prompt.create(
   statement: "What is an important lesson I've learned today or recently?",
   group: "Night"
 )
 
 
-
-
-Mood.create(
-  name: "Calm",
-  group: "Positive"
-)
-Mood.create(
-  name: "Confident",
-  group: "Positive"
-)
-Mood.create(
-  name: "Content",
-  group: "Positive"
-)
-Mood.create(
-  name: "Energized",
-  group: "Positive"
-)
-Mood.create(
-  name: "Enthusiastic",
-  group: "Positive"
-)
-Mood.create(
-  name: "Excited",
-  group: "Positive"
-)
-Mood.create(
-  name: "Free",
-  group: "Positive"
-)
-Mood.create(
-  name: "Grateful",
-  group: "Positive"
-)
-Mood.create(
-  name: "Happy",
-  group: "Positive"
-)
-Mood.create(
-  name: "Inspired",
-  group: "Positive"
-)
-Mood.create(
-  name: "Loving",
-  group: "Positive"
-)
-Mood.create(
-  name: "Motivated",
-  group: "Positive"
-)
-Mood.create(
-  name: "Optimistic",
-  group: "Positive"
-)
-Mood.create(
-  name: "Passionate",
-  group: "Positive"
-)
-Mood.create(
-  name: "Peaceful",
-  group: "Positive"
-)
-Mood.create(
-  name: "Proud",
-  group: "Positive"
-)
-Mood.create(
-  name: "Refreshed",
-  group: "Positive"
-)
-Mood.create(
-  name: "Relieved",
-  group: "Positive"
-)
-Mood.create(
-  name: "Satisfied",
-  group: "Positive"
-)
-Mood.create(
-  name: "Secure",
-  group: "Positive"
+DailyEntry.create(
+  rating: 1,
+  content: "rad",
+  user_id: amy.id,
+  prompt_id: prompt1.id,
+  date: "2020-12-03T01:33:37.107Z"
 )
 
-Mood.create(
-  name: "Afraid",
-  group: "Negative"
+DailyEntry.create(
+  rating: 3,
+  content: "rad",
+  user_id: amy.id,
+  prompt_id: prompt2.id,
+  date: "2020-12-02T01:33:37.107Z"
 )
-Mood.create(
-  name: "Angry",
-  group: "Negative"
+
+DailyEntry.create(
+  rating: 5,
+  content: "rad",
+  user_id: amy.id,
+  prompt_id: prompt3.id,
+  date: "2020-11-28T01:33:37.107Z"
 )
-Mood.create(
-  name: "Annoyed",
-  group: "Negative"
+
+
+DailyEntry.create(
+  rating: 4,
+  content: "rad",
+  user_id: amy.id,
+  prompt_id: prompt3.id,
+  date: "2020-11-27T01:33:37.107Z"
 )
-Mood.create(
-  name: "Anxious",
-  group: "Negative"
+
+DailyEntry.create(
+  rating: 5,
+  content: "rad",
+  user_id: amy.id,
+  prompt_id: prompt7.id,
+  date: "2020-11-29T01:33:37.107Z"
 )
-Mood.create(
-  name: "Ashamed",
-  group: "Negative"
+
+DailyEntry.create(
+  rating: 3,
+  content: "rad",
+  user_id: amy.id,
+  prompt_id: prompt7.id,
+  date: "2020-11-30T01:33:37.107Z"
 )
-Mood.create(
-  name: "Burned Out",
-  group: "Negative"
-)
-Mood.create(
-  name: "Confused",
-  group: "Negative"
-)
-Mood.create(
-  name: "Depressed",
-  group: "Negative"
-)
-Mood.create(
-  name: "Disappointed",
-  group: "Negative"
-)
-Mood.create(
-  name: "Embarassed",
-  group: "Negative"
-)
-Mood.create(
-  name: "Exhausted",
-  group: "Negative"
-)
-Mood.create(
-  name: "Guilty",
-  group: "Negative"
-)
-Mood.create(
-  name: "Jealous",
-  group: "Negative"
-)
-Mood.create(
-  name: "Lonely",
-  group: "Negative"
-)
-Mood.create(
-  name: "Nervous",
-  group: "Negative"
-)
-Mood.create(
-  name: "Sad",
-  group: "Negative"
-)
-Mood.create(
-  name: "Stressed",
-  group: "Negative"
-)
-Mood.create(
-  name: "Tired",
-  group: "Negative"
+
+
+DailyEntry.create(
+    rating: 2,
+    content: "rad",
+    user_id: amy.id,
+    prompt_id: prompt5.id,
+    date: "2020-11-26T01:33:37.107Z"
+  )
+
+DailyEntry.create(
+    rating: 3,
+    content: "rad",
+    user_id: amy.id,
+    prompt_id: prompt1.id,
+    date: "2020-11-25T01:33:37.107Z"
 )
 
 Goal.create(
