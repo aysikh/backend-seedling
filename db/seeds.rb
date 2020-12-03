@@ -160,22 +160,13 @@ Prompt.create(
   statement: "What is an important lesson I've learned today or recently?",
   group: "Night"
 )
-<<<<<<< HEAD
-=======
-
-
->>>>>>> css
 DailyEntry.create(
-  rating: 1,
+  rating: 4,
   content: "rad",
   user_id: amy.id,
   prompt_id: prompt1.id,
   date: "2020-12-03T01:33:37.107Z"
 )
-<<<<<<< HEAD
-=======
-
->>>>>>> css
 DailyEntry.create(
   rating: 3,
   content: "rad",
@@ -183,10 +174,6 @@ DailyEntry.create(
   prompt_id: prompt2.id,
   date: "2020-12-02T01:33:37.107Z"
 )
-<<<<<<< HEAD
-=======
-
->>>>>>> css
 DailyEntry.create(
   rating: 5,
   content: "rad",
@@ -194,11 +181,6 @@ DailyEntry.create(
   prompt_id: prompt3.id,
   date: "2020-11-28T01:33:37.107Z"
 )
-<<<<<<< HEAD
-=======
-
-
->>>>>>> css
 DailyEntry.create(
   rating: 4,
   content: "rad",
@@ -206,10 +188,6 @@ DailyEntry.create(
   prompt_id: prompt3.id,
   date: "2020-11-27T01:33:37.107Z"
 )
-<<<<<<< HEAD
-=======
-
->>>>>>> css
 DailyEntry.create(
   rating: 5,
   content: "rad",
@@ -217,10 +195,6 @@ DailyEntry.create(
   prompt_id: prompt7.id,
   date: "2020-11-29T01:33:37.107Z"
 )
-<<<<<<< HEAD
-=======
-
->>>>>>> css
 DailyEntry.create(
   rating: 3,
   content: "rad",
@@ -228,11 +202,6 @@ DailyEntry.create(
   prompt_id: prompt7.id,
   date: "2020-11-30T01:33:37.107Z"
 )
-<<<<<<< HEAD
-=======
-
-
->>>>>>> css
 DailyEntry.create(
     rating: 2,
     content: "rad",
@@ -240,12 +209,8 @@ DailyEntry.create(
     prompt_id: prompt5.id,
     date: "2020-11-26T01:33:37.107Z"
   )
-<<<<<<< HEAD
-=======
-
->>>>>>> css
 DailyEntry.create(
-    rating: 3,
+    rating: 4,
     content: "rad",
     user_id: amy.id,
     prompt_id: prompt1.id,
