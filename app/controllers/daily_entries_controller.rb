@@ -50,7 +50,6 @@ class DailyEntriesController < ApplicationController
       @dailyentry.update(
           rating: params[:rating],
           content: params[:content],
-          date: params[:date],
       )
       render json: {
         daily_entry: @dailyentry,

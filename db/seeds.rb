@@ -46,7 +46,6 @@ prompt8 = Prompt.create(
   statement: "I am grateful for...",
   group: "Morning"
 )
-
 Prompt.create(
   statement: "Set your intentions for the day. I intend to...",
   group: "Morning"
@@ -140,7 +139,7 @@ Prompt.create(
   group: "Night"
 )
 DailyEntry.create(
-  rating: 4,
+  rating: 1,
   content: "rad",
   user_id: amy.id,
   prompt_id: prompt1.id,
@@ -189,7 +188,7 @@ DailyEntry.create(
     date: "2020-11-26T01:33:37.107Z"
   )
 DailyEntry.create(
-    rating: 4,
+    rating: 3,
     content: "rad",
     user_id: amy.id,
     prompt_id: prompt1.id,
