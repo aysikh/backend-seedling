@@ -26,7 +26,7 @@ BlogPost.create(
 
 BlogPost.create(
     title: "Dead vs Alive Time",
-    content: "Robert Greene explains how there is two different types of time that we spend in our lives which is Dead and Alive time. Dead time is referred to passive/ waiting time while Alive time is referred to when we're utilizing our time through learning and acting. In my own day to day life I spend a decent amount of time commuting or even when I'm getting ready. What I would usually do is listen to music but for the past year I've been really into podcasts and listening to it during my idle time. Instead of making it "dead time" i've managed to use that time to make it "alive time." I've gained many great insights and resources from podcasts and it's a huge bonus that I find them pretty entertaining. Lately I've been into both Duncan Trussell and Joe Rogan's podcasts. There are many other podcasts I enjoy, but those two together and their own podcasts are packed with many different ear nuggets. I feel like I'm the last to get hip with new songs, but I don't feel too bad about it because I get a lot of knowledge from these podcasts which to me is a more valuable tradeoff.",
+    content: "Robert Greene explains how there is two different types of time that we spend in our lives which is Dead and Alive time. Dead time is referred to passive/ waiting time while Alive time is referred to when we're utilizing our time through learning and acting. In my own day to day life I spend a decent amount of time commuting or even when I'm getting ready. What I would usually do is listen to music but for the past year I've been really into podcasts and listening to it during my idle time. Instead of making it 'dead time' i've managed to use that time to make it 'alive time.' I've gained many great insights and resources from podcasts and it's a huge bonus that I find them pretty entertaining. Lately I've been into both Duncan Trussell and Joe Rogan's podcasts. There are many other podcasts I enjoy, but those two together and their own podcasts are packed with many different ear nuggets. I feel like I'm the last to get hip with new songs, but I don't feel too bad about it because I get a lot of knowledge from these podcasts which to me is a more valuable tradeoff.",
     user_id: amy.id
 )
 
@@ -135,63 +135,63 @@ DailyEntry.create(
     content: "Cheers to the beginning of this project",
     user_id: amy.id,
     prompt_id: prompt1.id,
-    date: "2020-11-24T01:33:37.107Z"
+    date: "2020-11-24T09:33:37.107Z"
 )
 DailyEntry.create(
     rating: 3,
     content: "Thankful for Flatiron",
     user_id: amy.id,
     prompt_id: prompt1.id,
-    date: "2020-11-25T01:33:37.107Z"
+    date: "2020-11-25T09:33:37.107Z"
 )
 DailyEntry.create(
     rating: 2,
     content: "Who likes turkey anyways....",
     user_id: amy.id,
     prompt_id: prompt5.id,
-    date: "2020-11-26T01:33:37.107Z"
+    date: "2020-11-26T09:33:37.107Z"
     )
 DailyEntry.create(
     rating: 4,
     content: "The anxiety is real with this one",
     user_id: amy.id,
     prompt_id: prompt3.id,
-    date: "2020-11-27T01:33:37.107Z"
+    date: "2020-11-27T09:33:37.107Z"
 )
 DailyEntry.create(
     rating: 5,
     content: "Making some progress on my project! LEGGOOOOO!",
     user_id: amy.id,
     prompt_id: prompt3.id,
-    date: "2020-11-28T01:33:37.107Z"
+    date: "2020-11-28T09:33:37.107Z"
 )
 DailyEntry.create(
   rating: 4,
   content: "I love my Flatiron Fam",
   user_id: amy.id,
   prompt_id: prompt7.id,
-  date: "2020-11-29T01:33:37.107Z"
+  date: "2020-11-29T09:33:37.107Z"
 )
 DailyEntry.create(
   rating: 5,
   content: "Thankful for the new friends and amazing experience in this bootcamp. ",
   user_id: amy.id,
   prompt_id: prompt7.id,
-  date: "2020-11-30T01:33:37.107Z"
+  date: "2020-11-30T09:33:37.107Z"
 )
 DailyEntry.create(
     rating: 2,
     content: "This week is going to be the death of me...on the bright side, Nugget has DOGGLES!",
     user_id: amy.id,
     prompt_id: prompt2.id,
-    date: "2020-12-01T01:33:37.107Z"
+    date: "2020-12-01T09:33:37.107Z"
   )
 DailyEntry.create(
   rating: 1,
   content: "WDYM SHOWCASE IS TOMORORW? *HEAVY BREATHING* FULL ON PANIC MODE RIGHT NOW.",
   user_id: amy.id,
   prompt_id: prompt2.id,
-  date: "2020-12-02T01:33:37.107Z"
+  date: "2020-12-02T09:33:37.107Z"
 )
 
 Goal.create(
