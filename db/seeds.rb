@@ -14,19 +14,10 @@ BlogPost.create(
   content: "I am thankful for Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ipsum purus, bibendum sit amet vulputate eget, porta semper ligula. Donec bibendum vulputate erat, ac fringilla mi finibus nec. Donec ac dolor sed dolor porttitor blandit vel vel purus. Fusce vel malesuada ligula. Nam quis vehicula ante, eu finibus est. Proin ullamcorper fermentum orci, quis finibus massa. Nunc lobortis, massa ut rutrum ultrices, metus metus finibus ex, sit amet facilisis neque enim sed neque. Quisque accumsan metus vel maximus consequat. Suspendisse lacinia tellus a libero volutpat maximus.",
   user_id: amy.id
 )
-<<<<<<< HEAD
-=======
-
-
->>>>>>> css
 prompt1 = Prompt.create(
   statement: "Today, I will...",
   group: "Morning"
 )
-<<<<<<< HEAD
-=======
-
->>>>>>> css
 prompt2 = Prompt.create(
   statement: "How will I face any challenges that may come my way?",
   group: "Morning"
@@ -43,31 +34,18 @@ prompt5 = Prompt.create(
   statement: "Today I will challenge myself by...",
   group: "Morning"
 )
-<<<<<<< HEAD
-=======
-
->>>>>>> css
 prompt6 = Prompt.create(
   statement: "I will prioritize myself by...",
   group: "Morning"
 )
-<<<<<<< HEAD
-=======
-
->>>>>>> css
 prompt7 = Prompt.create(
   statement: "I am thankful for...",
   group: "Morning"
 )
-<<<<<<< HEAD
-=======
-
->>>>>>> css
 prompt8 = Prompt.create(
   statement: "I am grateful for...",
   group: "Morning"
 )
-
 Prompt.create(
   statement: "Set your intentions for the day. I intend to...",
   group: "Morning"
@@ -161,7 +139,7 @@ Prompt.create(
   group: "Night"
 )
 DailyEntry.create(
-  rating: 4,
+  rating: 1,
   content: "rad",
   user_id: amy.id,
   prompt_id: prompt1.id,
@@ -210,7 +188,7 @@ DailyEntry.create(
     date: "2020-11-26T01:33:37.107Z"
   )
 DailyEntry.create(
-    rating: 4,
+    rating: 3,
     content: "rad",
     user_id: amy.id,
     prompt_id: prompt1.id,
