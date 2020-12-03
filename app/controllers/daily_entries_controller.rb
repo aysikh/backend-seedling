@@ -23,6 +23,7 @@ class DailyEntriesController < ApplicationController
     @dailyentry = DailyEntry.new(
       rating: params[:rating],
       content: params[:content],
+      date: DateTime.now,
       user: user,
       prompt: prompt
     )
@@ -34,7 +35,7 @@ class DailyEntriesController < ApplicationController
       }
     else
       render json: {
-        errors: true, 
+        errors: true,
         info: ["entry cannot be created"]
       }
     end
@@ -47,12 +48,14 @@ class DailyEntriesController < ApplicationController
     @dailyentry = DailyEntry.find(params[:id])
     if @dailyentry
       @dailyentry.update(
-      rating: params[:rating],
-      content: params[:content])
+          rating: params[:rating],
+          content: params[:content],
+          date: params[:date],
+      )
       render json: {
-        daily_entry: @dailyentry, 
+        daily_entry: @dailyentry,
         errors: false
-        }
+      }
       else
         render json: {
           errors: true, 

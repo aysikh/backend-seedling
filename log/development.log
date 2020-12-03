@@ -43180,3 +43180,502 @@ Processing by GoalsController#index as HTML
 Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 1485)
 
 
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3059619594471059655)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(3059619594471059655)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.2ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.2ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.1ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.1ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.2ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.1ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 6]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.1ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.2ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.1ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 9]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.1ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 10]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.1ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 11]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.1ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 12]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.1ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 13]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.1ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 14]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.1ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 15]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.1ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 16]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.2ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 17]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.1ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 18]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.1ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 19]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.1ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 20]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.1ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 21]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.2ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 22]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.2ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 23]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.1ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 24]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.1ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 25]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.1ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 26]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.1ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 27]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.1ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 28]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.1ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 29]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.1ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 30]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Destroy (0.1ms)[0m  [1m[31mDELETE FROM "prompts" WHERE "prompts"."id" = $1[0m  [["id", 31]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMood Load (0.4ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.2ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.2ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.2ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 6]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.2ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 9]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 10]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 11]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 12]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.2ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 13]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.2ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 14]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.2ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 15]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 16]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 17]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 18]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 19]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.2ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 20]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 21]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 22]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 23]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 24]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 25]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 26]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 27]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 28]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 29]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 30]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 31]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 32]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 33]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 34]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 35]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 36]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 37]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Destroy (0.1ms)[0m  [1m[31mDELETE FROM "moods" WHERE "moods"."id" = $1[0m  [["id", 38]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGoal Load (0.5ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGoal Destroy (0.2ms)[0m  [1m[31mDELETE FROM "goals" WHERE "goals"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGoal Destroy (0.1ms)[0m  [1m[31mDELETE FROM "goals" WHERE "goals"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGoal Destroy (0.1ms)[0m  [1m[31mDELETE FROM "goals" WHERE "goals"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGoal Destroy (0.1ms)[0m  [1m[31mDELETE FROM "goals" WHERE "goals"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGoal Destroy (0.2ms)[0m  [1m[31mDELETE FROM "goals" WHERE "goals"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGoal Destroy (0.2ms)[0m  [1m[31mDELETE FROM "goals" WHERE "goals"."id" = $1[0m  [["id", 6]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGoal Destroy (0.2ms)[0m  [1m[31mDELETE FROM "goals" WHERE "goals"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGoal Destroy (0.1ms)[0m  [1m[31mDELETE FROM "goals" WHERE "goals"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "aymes"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "nugget@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "aymes"], ["email", "nugget@gmail.com"], ["password_digest", "$2a$12$EJqWQ/aDR9LFchOpFVBy8e2DeiyOxUrz3oZtrQjYjFEy0whIUpzU2"], ["created_at", "2020-12-03 01:55:21.852621"], ["updated_at", "2020-12-03 01:55:21.852621"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBlogPost Create (0.5ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "dummy post"], ["content", "I am thankful for Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ipsum purus, bibendum sit amet vulputate eget, porta semper ligula. Donec bibendum vulputate erat, ac fringilla mi finibus nec. Donec ac dolor sed dolor porttitor blandit vel vel purus. Fusce vel malesuada ligula. Nam quis vehicula ante, eu finibus est. Proin ullamcorper fermentum orci, quis finibus massa. Nunc lobortis, massa ut rutrum ultrices, metus metus finibus ex, sit amet facilisis neque enim sed neque. Quisque accumsan metus vel maximus consequat. Suspendisse lacinia tellus a libero volutpat maximus."], ["created_at", "2020-12-03 01:55:21.871775"], ["updated_at", "2020-12-03 01:55:21.871775"], ["user_id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.5ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "Today, I will..."], ["group", "Morning"], ["created_at", "2020-12-03 01:55:21.874121"], ["updated_at", "2020-12-03 01:55:21.874121"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Load (0.1ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mDailyEntry Create (0.3ms)[0m  [1m[32mINSERT INTO "daily_entries" ("rating", "content", "user_id", "prompt_id", "created_at", "updated_at", "date") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["rating", 5], ["content", "rad"], ["user_id", 2], ["prompt_id", 32], ["created_at", "2020-12-03 01:55:21.890459"], ["updated_at", "2020-12-03 01:55:21.890459"], ["date", "2020-12-03 01:33:37.107000"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Load (0.1ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mDailyEntry Create (0.3ms)[0m  [1m[32mINSERT INTO "daily_entries" ("rating", "content", "user_id", "prompt_id", "created_at", "updated_at", "date") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["rating", 5], ["content", "rad"], ["user_id", 2], ["prompt_id", 32], ["created_at", "2020-12-03 01:55:21.896435"], ["updated_at", "2020-12-03 01:55:21.896435"], ["date", "2020-12-02 01:33:37.107000"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Load (0.1ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mDailyEntry Create (0.2ms)[0m  [1m[32mINSERT INTO "daily_entries" ("rating", "content", "user_id", "prompt_id", "created_at", "updated_at", "date") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["rating", 5], ["content", "rad"], ["user_id", 2], ["prompt_id", 32], ["created_at", "2020-12-03 01:55:21.901769"], ["updated_at", "2020-12-03 01:55:21.901769"], ["date", "2020-11-28 01:33:37.107000"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.2ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "How will I face any challenges that may come my way?"], ["group", "Morning"], ["created_at", "2020-12-03 01:55:21.903855"], ["updated_at", "2020-12-03 01:55:21.903855"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.1ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "One thing I can do to make my day better?"], ["group", "Morning"], ["created_at", "2020-12-03 01:55:21.906571"], ["updated_at", "2020-12-03 01:55:21.906571"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.1ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "Right now I am feeling..."], ["group", "Morning"], ["created_at", "2020-12-03 01:55:21.909109"], ["updated_at", "2020-12-03 01:55:21.909109"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.1ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "Today I will challenge myself by..."], ["group", "Morning"], ["created_at", "2020-12-03 01:55:21.911597"], ["updated_at", "2020-12-03 01:55:21.911597"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.2ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "I will prioritize myself by..."], ["group", "Morning"], ["created_at", "2020-12-03 01:55:21.914038"], ["updated_at", "2020-12-03 01:55:21.914038"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.1ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "I am thankful for..."], ["group", "Morning"], ["created_at", "2020-12-03 01:55:21.916710"], ["updated_at", "2020-12-03 01:55:21.916710"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.1ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "I am grateful for..."], ["group", "Morning"], ["created_at", "2020-12-03 01:55:21.919270"], ["updated_at", "2020-12-03 01:55:21.919270"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.1ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "Set your intentions for the day. I intend to..."], ["group", "Morning"], ["created_at", "2020-12-03 01:55:21.921595"], ["updated_at", "2020-12-03 01:55:21.921595"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.2ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "One thing I will accomplish today..."], ["group", "Morning"], ["created_at", "2020-12-03 01:55:21.923935"], ["updated_at", "2020-12-03 01:55:21.923935"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.2ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "I will focus on things that makes me feel good such as..."], ["group", "Morning"], ["created_at", "2020-12-03 01:55:21.936161"], ["updated_at", "2020-12-03 01:55:21.936161"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.1ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "Today I am excited for..."], ["group", "Morning"], ["created_at", "2020-12-03 01:55:21.938995"], ["updated_at", "2020-12-03 01:55:21.938995"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.1ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "What is something I can do to brighten up someone else's day today?"], ["group", "Morning"], ["created_at", "2020-12-03 01:55:21.941428"], ["updated_at", "2020-12-03 01:55:21.941428"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.2ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "Is there a different way of thinking about a situation that's bringing me down?"], ["group", "Morning"], ["created_at", "2020-12-03 01:55:21.943950"], ["updated_at", "2020-12-03 01:55:21.943950"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.1ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "A quality that I admire about myself is..."], ["group", "Morning"], ["created_at", "2020-12-03 01:55:21.946540"], ["updated_at", "2020-12-03 01:55:21.946540"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.1ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "Something I can't live without and why?"], ["group", "Morning"], ["created_at", "2020-12-03 01:55:21.949026"], ["updated_at", "2020-12-03 01:55:21.949026"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.1ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "Today I promise myself that I will not..."], ["group", "Morning"], ["created_at", "2020-12-03 01:55:21.951574"], ["updated_at", "2020-12-03 01:55:21.951574"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.2ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "An accomplishment from yesterday that I am proud of..."], ["group", "Morning"], ["created_at", "2020-12-03 01:55:21.953947"], ["updated_at", "2020-12-03 01:55:21.953947"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.1ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "I want to learn more about..."], ["group", "Morning"], ["created_at", "2020-12-03 01:55:21.956429"], ["updated_at", "2020-12-03 01:55:21.956429"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.2ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "My motto for today is..."], ["group", "Morning"], ["created_at", "2020-12-03 01:55:21.958874"], ["updated_at", "2020-12-03 01:55:21.958874"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.2ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "Today I told someone I appreciated them and that someone was..."], ["group", "Night"], ["created_at", "2020-12-03 01:55:21.961506"], ["updated_at", "2020-12-03 01:55:21.961506"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.2ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "I am very thankful for..."], ["group", "Night"], ["created_at", "2020-12-03 01:55:21.964425"], ["updated_at", "2020-12-03 01:55:21.964425"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.1ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "I am grateful for..."], ["group", "Night"], ["created_at", "2020-12-03 01:55:21.967373"], ["updated_at", "2020-12-03 01:55:21.967373"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.1ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "My day could've been better if..."], ["group", "Night"], ["created_at", "2020-12-03 01:55:21.969776"], ["updated_at", "2020-12-03 01:55:21.969776"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.1ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "One good thing about my day today was..."], ["group", "Night"], ["created_at", "2020-12-03 01:55:21.972378"], ["updated_at", "2020-12-03 01:55:21.972378"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.1ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "Today I felt..."], ["group", "Night"], ["created_at", "2020-12-03 01:55:21.974924"], ["updated_at", "2020-12-03 01:55:21.974924"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.1ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "What made me laugh today?"], ["group", "Night"], ["created_at", "2020-12-03 01:55:21.977694"], ["updated_at", "2020-12-03 01:55:21.977694"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.1ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "Today I told someone I loved them because..."], ["group", "Night"], ["created_at", "2020-12-03 01:55:21.980040"], ["updated_at", "2020-12-03 01:55:21.980040"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.1ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "Someone that made my day today is..."], ["group", "Night"], ["created_at", "2020-12-03 01:55:21.982439"], ["updated_at", "2020-12-03 01:55:21.982439"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.2ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "Right now I am feeling..."], ["group", "Night"], ["created_at", "2020-12-03 01:55:21.984738"], ["updated_at", "2020-12-03 01:55:21.984738"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.1ms)[0m  [1m[32mINSERT INTO "prompts" ("statement", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["statement", "What is an important lesson I've learned today or recently?"], ["group", "Night"], ["created_at", "2020-12-03 01:55:21.987187"], ["updated_at", "2020-12-03 01:55:21.987187"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.2ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Calm"], ["group", "Positive"], ["created_at", "2020-12-03 01:55:21.989619"], ["updated_at", "2020-12-03 01:55:21.989619"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Confident"], ["group", "Positive"], ["created_at", "2020-12-03 01:55:21.992079"], ["updated_at", "2020-12-03 01:55:21.992079"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.2ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Content"], ["group", "Positive"], ["created_at", "2020-12-03 01:55:21.994662"], ["updated_at", "2020-12-03 01:55:21.994662"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Energized"], ["group", "Positive"], ["created_at", "2020-12-03 01:55:21.997492"], ["updated_at", "2020-12-03 01:55:21.997492"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Enthusiastic"], ["group", "Positive"], ["created_at", "2020-12-03 01:55:21.999974"], ["updated_at", "2020-12-03 01:55:21.999974"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Excited"], ["group", "Positive"], ["created_at", "2020-12-03 01:55:22.002342"], ["updated_at", "2020-12-03 01:55:22.002342"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Free"], ["group", "Positive"], ["created_at", "2020-12-03 01:55:22.004719"], ["updated_at", "2020-12-03 01:55:22.004719"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Grateful"], ["group", "Positive"], ["created_at", "2020-12-03 01:55:22.007155"], ["updated_at", "2020-12-03 01:55:22.007155"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Happy"], ["group", "Positive"], ["created_at", "2020-12-03 01:55:22.009511"], ["updated_at", "2020-12-03 01:55:22.009511"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Inspired"], ["group", "Positive"], ["created_at", "2020-12-03 01:55:22.011838"], ["updated_at", "2020-12-03 01:55:22.011838"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Loving"], ["group", "Positive"], ["created_at", "2020-12-03 01:55:22.014158"], ["updated_at", "2020-12-03 01:55:22.014158"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.2ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Motivated"], ["group", "Positive"], ["created_at", "2020-12-03 01:55:22.024664"], ["updated_at", "2020-12-03 01:55:22.024664"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.2ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Optimistic"], ["group", "Positive"], ["created_at", "2020-12-03 01:55:22.027715"], ["updated_at", "2020-12-03 01:55:22.027715"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Passionate"], ["group", "Positive"], ["created_at", "2020-12-03 01:55:22.030670"], ["updated_at", "2020-12-03 01:55:22.030670"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Peaceful"], ["group", "Positive"], ["created_at", "2020-12-03 01:55:22.033354"], ["updated_at", "2020-12-03 01:55:22.033354"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Proud"], ["group", "Positive"], ["created_at", "2020-12-03 01:55:22.036440"], ["updated_at", "2020-12-03 01:55:22.036440"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.2ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Refreshed"], ["group", "Positive"], ["created_at", "2020-12-03 01:55:22.039076"], ["updated_at", "2020-12-03 01:55:22.039076"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Relieved"], ["group", "Positive"], ["created_at", "2020-12-03 01:55:22.041999"], ["updated_at", "2020-12-03 01:55:22.041999"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Satisfied"], ["group", "Positive"], ["created_at", "2020-12-03 01:55:22.044555"], ["updated_at", "2020-12-03 01:55:22.044555"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Secure"], ["group", "Positive"], ["created_at", "2020-12-03 01:55:22.047229"], ["updated_at", "2020-12-03 01:55:22.047229"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Afraid"], ["group", "Negative"], ["created_at", "2020-12-03 01:55:22.049604"], ["updated_at", "2020-12-03 01:55:22.049604"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Angry"], ["group", "Negative"], ["created_at", "2020-12-03 01:55:22.051946"], ["updated_at", "2020-12-03 01:55:22.051946"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Annoyed"], ["group", "Negative"], ["created_at", "2020-12-03 01:55:22.054444"], ["updated_at", "2020-12-03 01:55:22.054444"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Anxious"], ["group", "Negative"], ["created_at", "2020-12-03 01:55:22.057019"], ["updated_at", "2020-12-03 01:55:22.057019"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Ashamed"], ["group", "Negative"], ["created_at", "2020-12-03 01:55:22.059382"], ["updated_at", "2020-12-03 01:55:22.059382"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Burned Out"], ["group", "Negative"], ["created_at", "2020-12-03 01:55:22.061811"], ["updated_at", "2020-12-03 01:55:22.061811"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Confused"], ["group", "Negative"], ["created_at", "2020-12-03 01:55:22.064098"], ["updated_at", "2020-12-03 01:55:22.064098"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Depressed"], ["group", "Negative"], ["created_at", "2020-12-03 01:55:22.066520"], ["updated_at", "2020-12-03 01:55:22.066520"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Disappointed"], ["group", "Negative"], ["created_at", "2020-12-03 01:55:22.068930"], ["updated_at", "2020-12-03 01:55:22.068930"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Embarassed"], ["group", "Negative"], ["created_at", "2020-12-03 01:55:22.071335"], ["updated_at", "2020-12-03 01:55:22.071335"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Exhausted"], ["group", "Negative"], ["created_at", "2020-12-03 01:55:22.073712"], ["updated_at", "2020-12-03 01:55:22.073712"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.2ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Guilty"], ["group", "Negative"], ["created_at", "2020-12-03 01:55:22.076260"], ["updated_at", "2020-12-03 01:55:22.076260"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Jealous"], ["group", "Negative"], ["created_at", "2020-12-03 01:55:22.078663"], ["updated_at", "2020-12-03 01:55:22.078663"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Lonely"], ["group", "Negative"], ["created_at", "2020-12-03 01:55:22.080918"], ["updated_at", "2020-12-03 01:55:22.080918"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Nervous"], ["group", "Negative"], ["created_at", "2020-12-03 01:55:22.083186"], ["updated_at", "2020-12-03 01:55:22.083186"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sad"], ["group", "Negative"], ["created_at", "2020-12-03 01:55:22.085531"], ["updated_at", "2020-12-03 01:55:22.085531"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Stressed"], ["group", "Negative"], ["created_at", "2020-12-03 01:55:22.087903"], ["updated_at", "2020-12-03 01:55:22.087903"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.1ms)[0m  [1m[32mINSERT INTO "moods" ("name", "group", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Tired"], ["group", "Negative"], ["created_at", "2020-12-03 01:55:22.090262"], ["updated_at", "2020-12-03 01:55:22.090262"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGoal Create (0.5ms)[0m  [1m[32mINSERT INTO "goals" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Increase Happiness"], ["created_at", "2020-12-03 01:55:22.092725"], ["updated_at", "2020-12-03 01:55:22.092725"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGoal Create (0.2ms)[0m  [1m[32mINSERT INTO "goals" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Reduce Anxiety"], ["created_at", "2020-12-03 01:55:22.095771"], ["updated_at", "2020-12-03 01:55:22.095771"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGoal Create (0.1ms)[0m  [1m[32mINSERT INTO "goals" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Build Self-Esteem"], ["created_at", "2020-12-03 01:55:22.098661"], ["updated_at", "2020-12-03 01:55:22.098661"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGoal Create (0.1ms)[0m  [1m[32mINSERT INTO "goals" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Physical Fitness"], ["created_at", "2020-12-03 01:55:22.101215"], ["updated_at", "2020-12-03 01:55:22.101215"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGoal Create (0.2ms)[0m  [1m[32mINSERT INTO "goals" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Dietary Health"], ["created_at", "2020-12-03 01:55:22.103612"], ["updated_at", "2020-12-03 01:55:22.103612"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGoal Create (0.2ms)[0m  [1m[32mINSERT INTO "goals" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Improve Sleep"], ["created_at", "2020-12-03 01:55:22.114978"], ["updated_at", "2020-12-03 01:55:22.114978"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGoal Create (0.1ms)[0m  [1m[32mINSERT INTO "goals" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Manage Stress"], ["created_at", "2020-12-03 01:55:22.118006"], ["updated_at", "2020-12-03 01:55:22.118006"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGoal Create (0.1ms)[0m  [1m[32mINSERT INTO "goals" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Improve Productivity"], ["created_at", "2020-12-03 01:55:22.120789"], ["updated_at", "2020-12-03 01:55:22.120789"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m

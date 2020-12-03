@@ -18,9 +18,33 @@ BlogPost.create(
 )
 
 
-Prompt.create(
+x = Prompt.create(
   statement: "Today, I will...",
   group: "Morning"
+)
+
+DailyEntry.create(
+    rating: 5,
+    content: "rad",
+    user_id: amy.id,
+    prompt_id: x.id,
+    date: "2020-12-03T01:33:37.107Z"
+)
+
+DailyEntry.create(
+    rating: 5,
+    content: "rad",
+    user_id: amy.id,
+    prompt_id: x.id,
+    date: "2020-12-02T01:33:37.107Z"
+)
+
+DailyEntry.create(
+    rating: 5,
+    content: "rad",
+    user_id: amy.id,
+    prompt_id: x.id,
+    date: "2020-11-28T01:33:37.107Z"
 )
 
 Prompt.create(
