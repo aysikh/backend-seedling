@@ -49757,3 +49757,1601 @@ Processing by GoalsController#index as HTML
 Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1485)
 
 
+Started GET "/goals" for ::1 at 2020-12-03 11:45:42 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (0.4ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 1485)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 11:51:10 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (0.8ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 1485)
+
+
+Started GET "/blog_posts" for ::1 at 2020-12-03 12:06:08 -0500
+Started GET "/users/1" for ::1 at 2020-12-03 12:06:08 -0500
+Processing by UsersController#show as HTML
+Processing by BlogPostsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (6.7ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 18ms (Views: 10.0ms | ActiveRecord: 6.7ms | Allocations: 1682)
+
+
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 17ms (Views: 0.7ms | ActiveRecord: 3.1ms | Allocations: 2520)
+
+
+Started GET "/blog_posts" for ::1 at 2020-12-03 12:06:08 -0500
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.5ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.5ms | Allocations: 1493)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 12:13:47 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (6.3ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 6.3ms | Allocations: 1543)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 12:13:56 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (0.4ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 1485)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 12:14:37 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (12.0ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 35ms (Views: 19.5ms | ActiveRecord: 12.0ms | Allocations: 2213)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 12:15:50 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (68.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 98ms (Views: 0.3ms | ActiveRecord: 68.6ms | Allocations: 2912)
+
+
+Started GET "/users/1" for ::1 at 2020-12-03 12:15:50 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 43ms (Views: 0.9ms | ActiveRecord: 37.1ms | Allocations: 793)
+
+
+Started POST "/daily_entries" for ::1 at 2020-12-03 12:16:08 -0500
+Started GET "/daily_entries" for ::1 at 2020-12-03 12:16:08 -0500
+Processing by DailyEntriesController#create as */*
+  Parameters: {"rating"=>"5", "content"=>"flatiron", "user_id"=>1, "prompt_id"=>17, "daily_entry"=>{"rating"=>"5", "content"=>"flatiron", "user_id"=>1, "prompt_id"=>17}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/daily_entries_controller.rb:21:in `create'
+  [1m[36mPrompt Load (1.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/daily_entries_controller.rb:22:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/daily_entries_controller.rb:31:in `create'
+  [1m[36mDailyEntry Create (10.1ms)[0m  [1m[32mINSERT INTO "daily_entries" ("rating", "content", "user_id", "prompt_id", "created_at", "updated_at", "date") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["rating", 5], ["content", "flatiron"], ["user_id", 1], ["prompt_id", 17], ["created_at", "2020-12-03 17:16:08.262405"], ["updated_at", "2020-12-03 17:16:08.262405"], ["date", "2020-12-03 17:16:08.237452"]]
+  ↳ app/controllers/daily_entries_controller.rb:31:in `create'
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.9ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.9ms | Allocations: 2250)
+
+
+  [1m[35m (25.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/daily_entries_controller.rb:31:in `create'
+Completed 200 OK in 107ms (Views: 1.0ms | ActiveRecord: 37.7ms | Allocations: 8999)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 12:16:10 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.9ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.9ms | Allocations: 2315)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 12:18:10 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (1.3ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 1.3ms | Allocations: 2315)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 12:18:17 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 41ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 2915)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 12:18:19 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 2912)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 12:18:20 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 2912)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 12:18:22 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 2912)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 12:18:25 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 2912)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 12:18:26 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 2912)
+
+
+Started PATCH "/daily_entries/10" for ::1 at 2020-12-03 12:18:32 -0500
+Processing by DailyEntriesController#update as */*
+  Parameters: {"rating"=>"3", "content"=>"super nervous....", "id"=>"10", "daily_entry"=>{"rating"=>"3", "content"=>"super nervous...."}}
+  [1m[36mDailyEntry Load (0.5ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries" WHERE "daily_entries"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/daily_entries_controller.rb:48:in `update'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/daily_entries_controller.rb:50:in `update'
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/daily_entries_controller.rb:50:in `update'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/daily_entries_controller.rb:50:in `update'
+  [1m[36mDailyEntry Update (0.5ms)[0m  [1m[33mUPDATE "daily_entries" SET "rating" = $1, "content" = $2, "updated_at" = $3 WHERE "daily_entries"."id" = $4[0m  [["rating", 3], ["content", "super nervous...."], ["updated_at", "2020-12-03 17:18:32.635056"], ["id", 10]]
+  ↳ app/controllers/daily_entries_controller.rb:50:in `update'
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/daily_entries_controller.rb:50:in `update'
+Completed 200 OK in 19ms (Views: 0.5ms | ActiveRecord: 5.4ms | Allocations: 5632)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 12:18:33 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.4ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.4ms | Allocations: 2315)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 12:18:34 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 2912)
+
+
+Started DELETE "/daily_entries/10" for ::1 at 2020-12-03 12:18:36 -0500
+Processing by DailyEntriesController#destroy as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mDailyEntry Load (0.4ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries" WHERE "daily_entries"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/daily_entries_controller.rb:87:in `find_daily_entries'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/daily_entries_controller.rb:69:in `destroy'
+  [1m[36mDailyEntry Destroy (0.6ms)[0m  [1m[31mDELETE FROM "daily_entries" WHERE "daily_entries"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/daily_entries_controller.rb:69:in `destroy'
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/daily_entries_controller.rb:69:in `destroy'
+  [1m[36mDailyEntry Load (0.4ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:70:in `destroy'
+Completed 200 OK in 15ms (Views: 3.3ms | ActiveRecord: 6.4ms | Allocations: 4672)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 12:18:36 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.4ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.4ms | Allocations: 2168)
+
+
+Started GET "/blog_posts" for ::1 at 2020-12-03 12:18:39 -0500
+Started GET "/users/1" for ::1 at 2020-12-03 12:18:39 -0500
+Processing by BlogPostsController#index as HTML
+Processing by UsersController#show as HTML
+  [1m[36mBlogPost Load (1.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  Parameters: {"id"=>"1"}
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 1.4ms | Allocations: 2238)
+
+
+Started GET "/blog_posts" for ::1 at 2020-12-03 12:18:39 -0500
+Processing by BlogPostsController#index as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+  [1m[36mBlogPost Load (0.7ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 5.3ms | Allocations: 2910)
+
+
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.7ms | Allocations: 2381)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 12:19:06 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (2.4ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 2.4ms | Allocations: 1485)
+
+
+Started POST "/login" for ::1 at 2020-12-03 12:19:39 -0500
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"nugget@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"nugget@gmail.com"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "nugget@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:61:in `login'
+Completed 200 OK in 265ms (Views: 0.3ms | ActiveRecord: 1.3ms | Allocations: 817)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 12:19:39 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.7ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.7ms | Allocations: 2168)
+
+
+Started GET "/users/1" for ::1 at 2020-12-03 12:54:01 -0500
+Started GET "/blog_posts" for ::1 at 2020-12-03 12:54:01 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (1.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 1.2ms | Allocations: 1577)
+
+
+Started GET "/blog_posts" for ::1 at 2020-12-03 12:54:01 -0500
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (1.1ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 1.1ms | Allocations: 1461)
+
+
+  [1m[36mUser Load (33.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 41ms (Views: 0.5ms | ActiveRecord: 35.8ms | Allocations: 5370)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 12:54:09 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (0.7ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 1487)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 14:52:47 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (4.3ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 27ms (Views: 1.2ms | ActiveRecord: 4.3ms | Allocations: 1543)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 14:52:59 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (1.8ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 24ms (Views: 0.9ms | ActiveRecord: 1.8ms | Allocations: 1485)
+
+
+Started POST "/login" for ::1 at 2020-12-03 14:53:06 -0500
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"nugget@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"nugget@gmail.com"}}
+  [1m[36mUser Load (8.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "nugget@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:61:in `login'
+Completed 200 OK in 292ms (Views: 4.0ms | ActiveRecord: 8.4ms | Allocations: 844)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 14:53:06 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (1.8ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 1.8ms | Allocations: 2212)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 14:54:44 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (2.7ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 2.7ms | Allocations: 1485)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 14:54:50 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (0.4ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 1485)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 14:59:08 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (0.9ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 0.8ms | ActiveRecord: 0.9ms | Allocations: 1485)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 14:59:22 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (0.5ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1485)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 15:17:58 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.6ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.6ms | Allocations: 2251)
+
+
+Started GET "/blog_posts" for ::1 at 2020-12-03 15:18:13 -0500
+Started GET "/users/1" for ::1 at 2020-12-03 15:18:13 -0500
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.9ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.9ms | Allocations: 1481)
+
+
+Started GET "/blog_posts" for ::1 at 2020-12-03 15:18:13 -0500
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.3ms | Allocations: 1461)
+
+
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 6ms (Views: 1.6ms | ActiveRecord: 0.8ms | Allocations: 849)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 15:18:42 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (1.4ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 1.4ms | Allocations: 2214)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 15:18:44 -0500
+Started GET "/users/1" for ::1 at 2020-12-03 15:18:44 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by PromptsController#index as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 2.2ms | Allocations: 1512)
+
+
+  [1m[36mPrompt Load (68.1ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 74ms (Views: 0.1ms | ActiveRecord: 68.1ms | Allocations: 3843)
+
+
+Started POST "/daily_entries" for ::1 at 2020-12-03 15:18:56 -0500
+Processing by DailyEntriesController#create as */*
+  Parameters: {"rating"=>"4", "content"=>"this presentation!", "user_id"=>1, "prompt_id"=>11, "daily_entry"=>{"rating"=>"4", "content"=>"this presentation!", "user_id"=>1, "prompt_id"=>11}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/daily_entries_controller.rb:21:in `create'
+  [1m[36mPrompt Load (1.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/daily_entries_controller.rb:22:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/daily_entries_controller.rb:31:in `create'
+Started GET "/daily_entries" for ::1 at 2020-12-03 15:18:56 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.5ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.5ms | Allocations: 2168)
+
+
+  [1m[36mDailyEntry Create (40.9ms)[0m  [1m[32mINSERT INTO "daily_entries" ("rating", "content", "user_id", "prompt_id", "created_at", "updated_at", "date") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["rating", 4], ["content", "this presentation!"], ["user_id", 1], ["prompt_id", 11], ["created_at", "2020-12-03 20:18:56.127895"], ["updated_at", "2020-12-03 20:18:56.127895"], ["date", "2020-12-03 20:18:56.120999"]]
+  ↳ app/controllers/daily_entries_controller.rb:31:in `create'
+  [1m[35m (18.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/daily_entries_controller.rb:31:in `create'
+Completed 200 OK in 87ms (Views: 1.7ms | ActiveRecord: 62.3ms | Allocations: 7250)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 15:18:57 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.4ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.4ms | Allocations: 2315)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 15:19:05 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 2912)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 15:20:52 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (2.6ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 2.6ms | Allocations: 1485)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 15:20:58 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (0.3ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1485)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 15:21:02 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (0.3ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1485)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 15:21:06 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (0.3ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1485)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 15:21:26 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (0.3ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1485)
+
+
+Started POST "/login" for ::1 at 2020-12-03 15:28:19 -0500
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"nugget@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"nugget@gmail.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "nugget@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:61:in `login'
+Completed 200 OK in 269ms (Views: 1.1ms | ActiveRecord: 0.6ms | Allocations: 899)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 15:28:19 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (17.5ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 40ms (Views: 21.7ms | ActiveRecord: 17.5ms | Allocations: 2364)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 15:28:24 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.4ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.4ms | Allocations: 2315)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 15:28:25 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 2912)
+
+
+Started DELETE "/daily_entries/11" for ::1 at 2020-12-03 15:28:26 -0500
+Processing by DailyEntriesController#destroy as */*
+  Parameters: {"id"=>"11"}
+  [1m[36mDailyEntry Load (0.5ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries" WHERE "daily_entries"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/daily_entries_controller.rb:87:in `find_daily_entries'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/daily_entries_controller.rb:69:in `destroy'
+  [1m[36mDailyEntry Destroy (17.6ms)[0m  [1m[31mDELETE FROM "daily_entries" WHERE "daily_entries"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/daily_entries_controller.rb:69:in `destroy'
+  [1m[35m (8.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/daily_entries_controller.rb:69:in `destroy'
+  [1m[36mDailyEntry Load (1.0ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:70:in `destroy'
+Completed 200 OK in 42ms (Views: 4.4ms | ActiveRecord: 27.8ms | Allocations: 4657)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 15:28:26 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.7ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.7ms | Allocations: 2168)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 15:28:30 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.4ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 2168)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 15:33:57 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (0.5ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1485)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 15:34:00 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (0.3ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1485)
+
+
+Started POST "/users" for ::1 at 2020-12-03 15:34:26 -0500
+Processing by UsersController#create as */*
+  Parameters: {"name"=>"", "email"=>"", "password"=>"[FILTERED]", "goals"=>{}, "user"=>{"name"=>"", "email"=>""}}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+Started GET "/daily_entries" for ::1 at 2020-12-03 15:34:26 -0500
+  ↳ app/controllers/users_controller.rb:37:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:37:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:37:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:37:in `create'
+Completed 200 OK in 185ms (Views: 0.2ms | ActiveRecord: 2.0ms | Allocations: 10060)
+
+
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (1.1ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 1.1ms | Allocations: 2250)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 15:34:36 -0500
+Started GET "/users/1" for ::1 at 2020-12-03 15:34:36 -0500
+Processing by PromptsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (1.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 3130)
+
+
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 5.2ms | Allocations: 3873)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 15:34:37 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.4ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.4ms | Allocations: 2168)
+
+
+Started GET "/users/1" for ::1 at 2020-12-03 15:34:39 -0500
+Started GET "/blog_posts" for ::1 at 2020-12-03 15:34:39 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by BlogPostsController#index as HTML
+  [1m[36mUser Load (17.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBlogPost Load (14.7ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 23ms (Views: 0.5ms | ActiveRecord: 17.7ms | Allocations: 2230)
+
+
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 24ms (Views: 8.6ms | ActiveRecord: 14.7ms | Allocations: 2240)
+
+
+Started GET "/blog_posts" for ::1 at 2020-12-03 15:34:39 -0500
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.5ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.5ms | Allocations: 1464)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 15:34:45 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.7ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.7ms | Allocations: 2168)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 15:36:02 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (0.3ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 1485)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 15:36:32 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (0.4ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 1485)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 15:50:55 -0500
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (26.0ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 68ms (Views: 0.2ms | ActiveRecord: 47.6ms | Allocations: 6158)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 15:51:07 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (0.4ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 1504)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 15:51:10 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (4.1ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 34ms (Views: 13.8ms | ActiveRecord: 10.2ms | Allocations: 10727)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 15:51:14 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.3ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.3ms | Allocations: 2187)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 15:51:15 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (7.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 20ms (Views: 0.1ms | ActiveRecord: 10.0ms | Allocations: 6921)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 15:51:20 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 24ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 2915)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 15:51:23 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 2912)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 15:51:28 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 2912)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 15:51:30 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 2912)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 16:36:21 -0500
+Started GET "/users/1" for ::1 at 2020-12-03 16:36:21 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (1.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.7ms | Allocations: 3308)
+
+
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (9.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 34ms (Views: 0.3ms | ActiveRecord: 15.6ms | Allocations: 8001)
+
+
+Started GET "/blog_posts" for ::1 at 2020-12-03 16:36:27 -0500
+Started GET "/users/1" for ::1 at 2020-12-03 16:36:27 -0500
+Processing by BlogPostsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.9ms | Allocations: 794)
+
+
+  [1m[36mBlogPost Load (4.5ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 20ms (Views: 8.6ms | ActiveRecord: 8.0ms | Allocations: 6884)
+
+
+Started GET "/blog_posts" for ::1 at 2020-12-03 16:36:27 -0500
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.4ms | Allocations: 1461)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 16:36:35 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (1.6ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 1.6ms | Allocations: 2182)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 16:36:36 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 2912)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 16:36:38 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 2912)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 16:36:41 -0500
+Started GET "/users/1" for ::1 at 2020-12-03 16:36:41 -0500
+Processing by PromptsController#index as HTML
+Processing by UsersController#show as HTML
+  [1m[36mPrompt Load (1.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  Parameters: {"id"=>"1"}
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 3688)
+
+
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 9ms (Views: 0.8ms | ActiveRecord: 5.0ms | Allocations: 3311)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 16:36:47 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.5ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.5ms | Allocations: 2197)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 16:37:32 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.3ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 2168)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 16:37:55 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.4ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.4ms | Allocations: 2171)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 16:40:38 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.3ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 2168)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 16:40:41 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.3ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 2168)
+
+
+Started GET "/blog_posts" for ::1 at 2020-12-03 16:42:34 -0500
+Started GET "/users/1" for ::1 at 2020-12-03 16:42:34 -0500
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.9ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.9ms | Allocations: 1461)
+
+
+Started GET "/blog_posts" for ::1 at 2020-12-03 16:42:34 -0500
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 1512)
+
+
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 850)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 16:42:36 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (1.0ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 1.0ms | Allocations: 2214)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 16:49:27 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (0.7ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 1543)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 16:54:45 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (0.3ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1485)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 16:55:04 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.5ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.5ms | Allocations: 2212)
+
+
+Started GET "/blog_posts" for ::1 at 2020-12-03 17:08:13 -0500
+Started GET "/users/1" for ::1 at 2020-12-03 17:08:13 -0500
+Processing by BlogPostsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.8ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.8ms | Allocations: 1670)
+
+
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 1.5ms | Allocations: 2550)
+
+
+Started GET "/blog_posts" for ::1 at 2020-12-03 17:08:13 -0500
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.8ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.8ms | Allocations: 1493)
+
+
+Started POST "/blog_posts" for ::1 at 2020-12-03 17:08:18 -0500
+Processing by BlogPostsController#create as */*
+  Parameters: {"title"=>"testing", "content"=>"hello", "user_id"=>1, "blog_post"=>{"title"=>"testing", "content"=>"hello", "user_id"=>1}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/blog_posts_controller.rb:21:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blog_posts_controller.rb:22:in `create'
+  [1m[36mBlogPost Create (18.7ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "testing"], ["content", "hello"], ["created_at", "2020-12-03 22:08:18.671802"], ["updated_at", "2020-12-03 22:08:18.671802"], ["user_id", 1]]
+  ↳ app/controllers/blog_posts_controller.rb:22:in `create'
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blog_posts_controller.rb:22:in `create'
+Completed 200 OK in 46ms (Views: 0.4ms | ActiveRecord: 22.0ms | Allocations: 5572)
+
+
+Started GET "/blog_posts" for ::1 at 2020-12-03 17:08:18 -0500
+Started GET "/users/1" for ::1 at 2020-12-03 17:08:18 -0500
+Processing by BlogPostsController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.7ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.7ms | Allocations: 1701)
+
+
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 2.9ms | Allocations: 2508)
+
+
+Started GET "/blog_posts" for ::1 at 2020-12-03 17:08:18 -0500
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1585)
+
+
+Started DELETE "/blog_posts/6" for ::1 at 2020-12-03 17:08:21 -0500
+Processing by BlogPostsController#destroy as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/blog_posts_controller.rb:67:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blog_posts_controller.rb:68:in `destroy'
+  [1m[36mBlogPost Destroy (4.6ms)[0m  [1m[31mDELETE FROM "blog_posts" WHERE "blog_posts"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/blog_posts_controller.rb:68:in `destroy'
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blog_posts_controller.rb:68:in `destroy'
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:69:in `destroy'
+Completed 200 OK in 19ms (Views: 2.7ms | ActiveRecord: 10.0ms | Allocations: 4070)
+
+
+Started GET "/blog_posts" for ::1 at 2020-12-03 17:08:21 -0500
+Started GET "/users/1" for ::1 at 2020-12-03 17:08:21 -0500
+Processing by UsersController#show as HTML
+Processing by BlogPostsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 1569)
+
+
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.8ms | Allocations: 2305)
+
+
+Started GET "/blog_posts" for ::1 at 2020-12-03 17:08:21 -0500
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1461)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 17:08:52 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.4ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.4ms | Allocations: 2182)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 17:09:35 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (1.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 1485)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 17:37:20 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (0.7ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 1543)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 17:55:39 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (0.5ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1543)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 18:06:41 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.7ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.7ms | Allocations: 2250)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 18:07:57 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.8ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.8ms | Allocations: 2168)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 18:09:37 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.2ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 2168)
+
+
+Started GET "/users/1" for ::1 at 2020-12-03 18:09:39 -0500
+Started GET "/blog_posts" for ::1 at 2020-12-03 18:09:39 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 813)
+
+
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.6ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.6ms | Allocations: 1549)
+
+
+Started GET "/blog_posts" for ::1 at 2020-12-03 18:09:39 -0500
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1461)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 18:10:54 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.9ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.9ms | Allocations: 2182)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 18:10:58 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.4ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms | Allocations: 2168)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 18:11:00 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.5ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.5ms | Allocations: 2168)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 18:11:05 -0500
+Started GET "/users/1" for ::1 at 2020-12-03 18:11:05 -0500
+Processing by PromptsController#index as HTML
+Processing by UsersController#show as HTML
+  [1m[36mPrompt Load (1.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  Parameters: {"id"=>"1"}
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 3223)
+
+
+  [1m[36mUser Load (13.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 13.0ms | Allocations: 3314)
+
+
+Started POST "/daily_entries" for ::1 at 2020-12-03 18:11:10 -0500
+Processing by DailyEntriesController#create as */*
+  Parameters: {"rating"=>"5", "content"=>"yeeet", "user_id"=>1, "prompt_id"=>1, "daily_entry"=>{"rating"=>"5", "content"=>"yeeet", "user_id"=>1, "prompt_id"=>1}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/daily_entries_controller.rb:21:in `create'
+  [1m[36mPrompt Load (1.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/daily_entries_controller.rb:22:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/daily_entries_controller.rb:31:in `create'
+Started GET "/daily_entries" for ::1 at 2020-12-03 18:11:10 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Create (6.8ms)[0m  [1m[32mINSERT INTO "daily_entries" ("rating", "content", "user_id", "prompt_id", "created_at", "updated_at", "date") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["rating", 5], ["content", "yeeet"], ["user_id", 1], ["prompt_id", 1], ["created_at", "2020-12-03 23:11:10.325304"], ["updated_at", "2020-12-03 23:11:10.325304"], ["date", "2020-12-03 23:11:10.323727"]]
+  ↳ app/controllers/daily_entries_controller.rb:31:in `create'
+  [1m[36mDailyEntry Load (0.9ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.9ms | Allocations: 2888)
+
+
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/daily_entries_controller.rb:31:in `create'
+Completed 200 OK in 33ms (Views: 0.4ms | ActiveRecord: 14.8ms | Allocations: 7645)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 18:11:12 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.3ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms | Allocations: 2315)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 18:11:14 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.4ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.4ms | Allocations: 2315)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 18:11:15 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 2912)
+
+
+Started DELETE "/daily_entries/12" for ::1 at 2020-12-03 18:11:16 -0500
+Processing by DailyEntriesController#destroy as */*
+  Parameters: {"id"=>"12"}
+  [1m[36mDailyEntry Load (0.5ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries" WHERE "daily_entries"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/daily_entries_controller.rb:87:in `find_daily_entries'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/daily_entries_controller.rb:69:in `destroy'
+  [1m[36mDailyEntry Destroy (0.4ms)[0m  [1m[31mDELETE FROM "daily_entries" WHERE "daily_entries"."id" = $1[0m  [["id", 12]]
+  ↳ app/controllers/daily_entries_controller.rb:69:in `destroy'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/daily_entries_controller.rb:69:in `destroy'
+  [1m[36mDailyEntry Load (0.4ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:70:in `destroy'
+Completed 200 OK in 9ms (Views: 3.1ms | ActiveRecord: 1.9ms | Allocations: 4764)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 18:11:16 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.3ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 2168)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 18:11:18 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.6ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.6ms | Allocations: 2168)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 18:16:23 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (0.5ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1543)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 18:24:16 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.8ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.8ms | Allocations: 2250)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 18:38:28 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.8ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.8ms | Allocations: 2250)
+
+
+Started POST "/login" for ::1 at 2020-12-03 18:54:29 -0500
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"nugget@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"nugget@gmail.com"}}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "nugget@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:61:in `login'
+Completed 200 OK in 266ms (Views: 0.6ms | ActiveRecord: 3.8ms | Allocations: 1017)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 18:54:30 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.8ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.8ms | Allocations: 2216)
+
+
+Started GET "/users/1" for ::1 at 2020-12-03 18:55:03 -0500
+Started GET "/prompts" for ::1 at 2020-12-03 18:55:03 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 768)
+
+
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (1.1ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 2985)
+
+
+Started POST "/daily_entries" for ::1 at 2020-12-03 18:55:13 -0500
+Processing by DailyEntriesController#create as */*
+  Parameters: {"rating"=>"3", "content"=>"Flatiron!", "user_id"=>1, "prompt_id"=>13, "daily_entry"=>{"rating"=>"3", "content"=>"Flatiron!", "user_id"=>1, "prompt_id"=>13}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/daily_entries_controller.rb:21:in `create'
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/daily_entries_controller.rb:22:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/daily_entries_controller.rb:31:in `create'
+  [1m[36mDailyEntry Create (1.0ms)[0m  [1m[32mINSERT INTO "daily_entries" ("rating", "content", "user_id", "prompt_id", "created_at", "updated_at", "date") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["rating", 3], ["content", "Flatiron!"], ["user_id", 1], ["prompt_id", 13], ["created_at", "2020-12-03 23:55:13.339045"], ["updated_at", "2020-12-03 23:55:13.339045"], ["date", "2020-12-03 23:55:13.338235"]]
+  ↳ app/controllers/daily_entries_controller.rb:31:in `create'
+  [1m[35m (10.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/daily_entries_controller.rb:31:in `create'
+Completed 200 OK in 21ms (Views: 0.3ms | ActiveRecord: 13.5ms | Allocations: 3817)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 18:55:13 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.5ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.5ms | Allocations: 2344)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 18:55:18 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.8ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.8ms | Allocations: 2315)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 18:55:47 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.5ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.5ms | Allocations: 2315)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 18:55:51 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 2912)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 18:55:54 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 2912)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 18:55:59 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 2912)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 18:56:01 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 2912)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 18:56:09 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 2912)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 18:56:11 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 2912)
+
+
+Started PATCH "/daily_entries/13" for ::1 at 2020-12-03 18:56:21 -0500
+Processing by DailyEntriesController#update as */*
+  Parameters: {"rating"=>"5", "content"=>"this show case is awesome!", "id"=>"13", "daily_entry"=>{"rating"=>"5", "content"=>"this show case is awesome!"}}
+  [1m[36mDailyEntry Load (0.2ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries" WHERE "daily_entries"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/daily_entries_controller.rb:48:in `update'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/daily_entries_controller.rb:50:in `update'
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/daily_entries_controller.rb:50:in `update'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/daily_entries_controller.rb:50:in `update'
+  [1m[36mDailyEntry Update (2.7ms)[0m  [1m[33mUPDATE "daily_entries" SET "rating" = $1, "content" = $2, "updated_at" = $3 WHERE "daily_entries"."id" = $4[0m  [["rating", 5], ["content", "this show case is awesome!"], ["updated_at", "2020-12-03 23:56:21.033145"], ["id", 13]]
+  ↳ app/controllers/daily_entries_controller.rb:50:in `update'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/daily_entries_controller.rb:50:in `update'
+Completed 200 OK in 31ms (Views: 0.6ms | ActiveRecord: 4.8ms | Allocations: 7851)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 18:56:21 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.6ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.6ms | Allocations: 2320)
+
+
+Started GET "/prompts" for ::1 at 2020-12-03 18:56:22 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 2912)
+
+
+Started GET "/users/1" for ::1 at 2020-12-03 18:56:31 -0500
+Started GET "/blog_posts" for ::1 at 2020-12-03 18:56:31 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by BlogPostsController#index as HTML
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 2.8ms | Allocations: 1586)
+
+
+  [1m[36mBlogPost Load (3.1ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 3.2ms | ActiveRecord: 3.1ms | Allocations: 2361)
+
+
+Started GET "/blog_posts" for ::1 at 2020-12-03 18:56:31 -0500
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.7ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.7ms | Allocations: 1461)
+
+
+Started POST "/blog_posts" for ::1 at 2020-12-03 18:56:51 -0500
+Processing by BlogPostsController#create as */*
+  Parameters: {"title"=>"How to survive bootcamp", "content"=>"Make friends!", "user_id"=>1, "blog_post"=>{"title"=>"How to survive bootcamp", "content"=>"Make friends!", "user_id"=>1}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/blog_posts_controller.rb:21:in `create'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blog_posts_controller.rb:22:in `create'
+  [1m[36mBlogPost Create (1.2ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "How to survive bootcamp"], ["content", "Make friends!"], ["created_at", "2020-12-03 23:56:51.045913"], ["updated_at", "2020-12-03 23:56:51.045913"], ["user_id", 1]]
+  ↳ app/controllers/blog_posts_controller.rb:22:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blog_posts_controller.rb:22:in `create'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 2.2ms | Allocations: 3200)
+
+
+Started GET "/blog_posts" for ::1 at 2020-12-03 18:56:51 -0500
+Started GET "/users/1" for ::1 at 2020-12-03 18:56:51 -0500
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (2.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 2.2ms | Allocations: 1603)
+
+
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/blog_posts" for ::1 at 2020-12-03 18:56:51 -0500
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.6ms | Allocations: 1084)
+
+
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms | Allocations: 1585)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 18:56:57 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.3ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 2317)
+
+
+Started GET "/goals" for ::1 at 2020-12-03 19:14:00 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (0.5ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1543)
+
+
+Started POST "/users" for ::1 at 2020-12-03 21:01:27 -0500
+Started GET "/daily_entries" for ::1 at 2020-12-03 21:01:27 -0500
+Processing by UsersController#create as */*
+Processing by DailyEntriesController#index as HTML
+  Parameters: {"name"=>"", "email"=>"", "password"=>"[FILTERED]", "goals"=>{}, "user"=>{"name"=>"", "email"=>""}}
+  [1m[36mDailyEntry Load (4.2ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 2.8ms | ActiveRecord: 4.2ms | Allocations: 3189)
+
+
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:37:in `create'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:37:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:37:in `create'
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:37:in `create'
+Completed 200 OK in 31ms (Views: 0.1ms | ActiveRecord: 3.1ms | Allocations: 10118)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-03 21:01:43 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.5ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.5ms | Allocations: 2381)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-12-03 21:01:44 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/goals" for ::1 at 2020-12-05 14:23:06 -0500
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (3.5ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 32ms (Views: 0.2ms | ActiveRecord: 11.7ms | Allocations: 6158)
+
+
+Started POST "/login" for ::1 at 2020-12-05 14:24:21 -0500
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"nugget@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"nugget@gmail.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "nugget@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:61:in `login'
+Completed 200 OK in 269ms (Views: 0.4ms | ActiveRecord: 2.7ms | Allocations: 4899)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-05 14:24:22 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.6ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 23ms (Views: 10.3ms | ActiveRecord: 4.9ms | Allocations: 10853)
+
+
+Started GET "/users/1" for ::1 at 2020-12-05 14:24:36 -0500
+Started GET "/prompts" for ::1 at 2020-12-05 14:24:36 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.6ms | Allocations: 900)
+
+
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 34ms (Views: 0.1ms | ActiveRecord: 6.3ms | Allocations: 7043)
+
+
+Started POST "/daily_entries" for ::1 at 2020-12-05 14:24:55 -0500
+Processing by DailyEntriesController#create as */*
+  Parameters: {"rating"=>"4", "content"=>"eating a lot of food. Having a good time with my friends, ", "user_id"=>1, "prompt_id"=>10, "daily_entry"=>{"rating"=>"4", "content"=>"eating a lot of food. Having a good time with my friends, ", "user_id"=>1, "prompt_id"=>10}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/daily_entries_controller.rb:21:in `create'
+  [1m[36mPrompt Load (1.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/daily_entries_controller.rb:22:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/daily_entries_controller.rb:31:in `create'
+Started GET "/daily_entries" for ::1 at 2020-12-05 14:24:55 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Create (4.9ms)[0m  [1m[32mINSERT INTO "daily_entries" ("rating", "content", "user_id", "prompt_id", "created_at", "updated_at", "date") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["rating", 4], ["content", "eating a lot of food. Having a good time with my friends, "], ["user_id", 1], ["prompt_id", 10], ["created_at", "2020-12-05 19:24:55.086526"], ["updated_at", "2020-12-05 19:24:55.086526"], ["date", "2020-12-05 19:24:55.071807"]]
+  [1m[36mDailyEntry Load (0.9ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:31:in `create'
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.9ms | Allocations: 3104)
+
+
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/daily_entries_controller.rb:31:in `create'
+Completed 200 OK in 43ms (Views: 0.5ms | ActiveRecord: 14.6ms | Allocations: 10105)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-05 14:24:58 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.4ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 2496)
+
+
+Started GET "/prompts" for ::1 at 2020-12-05 14:25:03 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 2912)
+
+
+Started GET "/prompts" for ::1 at 2020-12-05 14:25:08 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 2912)
+
+
+Started GET "/prompts" for ::1 at 2020-12-05 14:25:25 -0500
+Processing by PromptsController#index as HTML
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 2912)
+
+
+Started DELETE "/daily_entries/14" for ::1 at 2020-12-05 14:25:29 -0500
+Processing by DailyEntriesController#destroy as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mDailyEntry Load (0.4ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries" WHERE "daily_entries"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/daily_entries_controller.rb:87:in `find_daily_entries'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/daily_entries_controller.rb:69:in `destroy'
+  [1m[36mDailyEntry Destroy (0.6ms)[0m  [1m[31mDELETE FROM "daily_entries" WHERE "daily_entries"."id" = $1[0m  [["id", 14]]
+  ↳ app/controllers/daily_entries_controller.rb:69:in `destroy'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/daily_entries_controller.rb:69:in `destroy'
+  [1m[36mDailyEntry Load (0.4ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:70:in `destroy'
+Completed 200 OK in 13ms (Views: 4.3ms | ActiveRecord: 2.4ms | Allocations: 4932)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-05 14:25:30 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.4ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.4ms | Allocations: 2317)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-05 14:25:56 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.3ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 2317)
+
+
+Started GET "/blog_posts" for ::1 at 2020-12-05 14:26:36 -0500
+Started GET "/users/1" for ::1 at 2020-12-05 14:26:36 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 883)
+
+
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.5ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 21ms (Views: 10.1ms | ActiveRecord: 8.5ms | Allocations: 5912)
+
+
+Started GET "/blog_posts" for ::1 at 2020-12-05 14:26:36 -0500
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/controllers/blog_posts_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 1585)
+
+
+Started GET "/prompts" for ::1 at 2020-12-05 14:26:39 -0500
+Started GET "/users/1" for ::1 at 2020-12-05 14:26:39 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by PromptsController#index as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 2.5ms | Allocations: 1521)
+
+
+  [1m[36mPrompt Load (8.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 8.6ms | Allocations: 3808)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-05 14:26:43 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.4ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.4ms | Allocations: 2317)
+
+
+Started GET "/prompts" for ::1 at 2020-12-05 14:26:49 -0500
+Started GET "/users/1" for ::1 at 2020-12-05 14:26:49 -0500
+Processing by UsersController#show as HTML
+Processing by PromptsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+  ↳ app/controllers/prompts_controller.rb:4:in `index'
+Completed 200 OK in 19ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 3724)
+
+
+Completed 200 OK in 16ms (Views: 12.5ms | ActiveRecord: 0.5ms | Allocations: 1282)
+
+
+Started GET "/daily_entries" for ::1 at 2020-12-05 14:26:51 -0500
+Processing by DailyEntriesController#index as HTML
+  [1m[36mDailyEntry Load (0.7ms)[0m  [1m[34mSELECT "daily_entries".* FROM "daily_entries"[0m
+  ↳ app/controllers/daily_entries_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.7ms | Allocations: 2317)
+
+
+Started GET "/goals" for ::1 at 2020-12-08 17:29:06 -0500
+Processing by GoalsController#index as HTML
+  [1m[36mGoal Load (5.5ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/controllers/goals_controller.rb:4:in `index'
+Completed 200 OK in 20ms (Views: 0.7ms | ActiveRecord: 5.5ms | Allocations: 1544)
+
+
